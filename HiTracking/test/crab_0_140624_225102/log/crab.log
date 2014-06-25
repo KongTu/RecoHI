@@ -1,0 +1,1965 @@
+2014-06-24 22:51:02,933 [DEBUG] 	/afs/cern.ch/cms/ccs/wm/scripts/Crab/CRAB_2_10_5_patch1/python/crab.py -create -submit
+
+2014-06-24 22:51:02,933 [INFO] 	Version 2.10.5_patch1 running on Tue Jun 24 22:51:02 2014 CET (20:51:02 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /afs/cern.ch/user/z/ztu/scratch0/CMSSW_5_3_16/src/RecoHI/HiTracking/test/crab_0_140624_225102/
+
+2014-06-24 22:51:02,934 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/afs/cern.ch/user/z/ztu/.cms_crab/allowed_releases.conf].
+2014-06-24 22:51:02,935 [DEBUG] 	Service initialised ({'endpoint': 'http://cmsdoc.cern.ch/cms/LCG/crab/config/', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_crab', 'basepath': '/cms/LCG/crab/config/', 'method': None, 'timeout': 20, 'requests': {'endpoint': 'http://cmsdoc.cern.ch/cms/LCG/crab/config/', 'timeout': 20, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_crab', 'cacheduration': 0.5, 'host': 'cmsdoc.cern.ch', 'accept_type': 'text/html', 'content_type': 'application/x-www-form-urlencoded', 'logger': <logging.Logger instance at 0x1ea74518>, 'type': 'txt/csv', 'conn': <httplib.HTTPConnection instance at 0x1ea74758>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 0.5, 'type': 'txt/csv', 'inputdata': {}}):
+	 host: cmsdoc.cern.ch, basepath: /cms/LCG/crab/config/ (text/html)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_crab (duration 0.5 hours, max reuse 24.0 hours)
+2014-06-24 22:51:02,980 [DEBUG] 	/afs/cern.ch/user/z/ztu/.cms_crab/0_GET_allowed_releases.conf expired, refreshing cache
+2014-06-24 22:51:02,980 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/allowed_releases.conf
+	data: {}
+2014-06-24 22:51:03,677 [DEBUG] 	Service initialised ({'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'content_type': 'application/json', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'basepath': '/sitedb/data/prod/', 'method': None, 'accept_type': 'application/json', 'timeout': 30, 'requests': {'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'host': 'cmsweb.cern.ch', 'accept_type': 'application/json', 'content_type': 'application/json', 'logger': <logging.Logger instance at 0x1ea74518>, 'conn': <httplib.HTTPSConnection instance at 0x1ebca170>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 0.5, 'inputdata': {}}):
+	 host: cmsweb.cern.ch, basepath: /sitedb/data/prod/ (application/json)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_sitedbcache (duration 0.5 hours, max reuse 24.0 hours)
+2014-06-24 22:51:03,678 [DEBUG] 	Service initialised ({'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'content_type': 'application/json', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'basepath': '/sitedb/data/prod/', 'method': None, 'accept_type': 'application/json', 'timeout': 30, 'requests': {'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'host': 'cmsweb.cern.ch', 'accept_type': 'application/json', 'content_type': 'application/json', 'logger': <logging.Logger instance at 0x1ea74518>, 'conn': <httplib.HTTPSConnection instance at 0x1ebca1b8>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 0.5, 'inputdata': {}}):
+	 host: cmsweb.cern.ch, basepath: /sitedb/data/prod/ (application/json)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_sitedbcache (duration 0.5 hours, max reuse 24.0 hours)
+2014-06-24 22:51:03,678 [DEBUG] 	Input whitelist: 
+2014-06-24 22:51:03,678 [DEBUG] 	Input blacklist: 
+2014-06-24 22:51:03,678 [DEBUG] 	Converted whitelist: 
+2014-06-24 22:51:03,678 [DEBUG] 	Converted blacklist: 
+2014-06-24 22:51:03,679 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/afs/cern.ch/user/z/ztu/.cms_crab/myproxy_server.conf].
+2014-06-24 22:51:03,679 [DEBUG] 	Service initialised ({'endpoint': 'http://cmsdoc.cern.ch/cms/LCG/crab/config/', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_crab', 'basepath': '/cms/LCG/crab/config/', 'method': None, 'timeout': 20, 'requests': {'endpoint': 'http://cmsdoc.cern.ch/cms/LCG/crab/config/', 'timeout': 20, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_crab', 'cacheduration': 0.5, 'host': 'cmsdoc.cern.ch', 'accept_type': 'text/html', 'content_type': 'application/x-www-form-urlencoded', 'logger': <logging.Logger instance at 0x1ea74518>, 'type': 'txt/csv', 'conn': <httplib.HTTPConnection instance at 0x1ebca290>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 0.5, 'type': 'txt/csv', 'inputdata': {}}):
+	 host: cmsdoc.cern.ch, basepath: /cms/LCG/crab/config/ (text/html)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_crab (duration 0.5 hours, max reuse 24.0 hours)
+2014-06-24 22:51:03,680 [DEBUG] 	/afs/cern.ch/user/z/ztu/.cms_crab/0_GET_myproxy_server.conf expired, refreshing cache
+2014-06-24 22:51:03,680 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/myproxy_server.conf
+	data: {}
+2014-06-24 22:51:03,686 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/afs/cern.ch/user/z/ztu/.cms_crab/site_black_list.conf].
+2014-06-24 22:51:03,687 [DEBUG] 	Service initialised ({'endpoint': 'http://cmsdoc.cern.ch/cms/LCG/crab/config/', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_crab', 'basepath': '/cms/LCG/crab/config/', 'method': None, 'timeout': 20, 'requests': {'endpoint': 'http://cmsdoc.cern.ch/cms/LCG/crab/config/', 'timeout': 20, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_crab', 'cacheduration': 0.5, 'host': 'cmsdoc.cern.ch', 'accept_type': 'text/html', 'content_type': 'application/x-www-form-urlencoded', 'logger': <logging.Logger instance at 0x1ea74518>, 'type': 'txt/csv', 'conn': <httplib.HTTPConnection instance at 0x1ebca290>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 0.5, 'type': 'txt/csv', 'inputdata': {}}):
+	 host: cmsdoc.cern.ch, basepath: /cms/LCG/crab/config/ (text/html)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_crab (duration 0.5 hours, max reuse 24.0 hours)
+2014-06-24 22:51:03,687 [DEBUG] 	/afs/cern.ch/user/z/ztu/.cms_crab/0_GET_site_black_list.conf expired, refreshing cache
+2014-06-24 22:51:03,687 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/site_black_list.conf
+	data: {}
+2014-06-24 22:51:03,693 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-06-24 22:51:03,758 [INFO] 	voms extension lifetime for proxy /tmp/x509up_u30140 is 0 
+	CRAB will ask ask you create a new proxy
+2014-06-24 22:51:32,267 [INFO] 	Your proxy will expire in:
+	91 hours 26 minutes 37 seconds
+
+2014-06-24 22:51:36,472 [DEBUG] 	MyProxy delegation:
+export GT_PROXY_MODE=rfc; myproxy-init -d -n -s myproxy.cern.ch
+2014-06-24 22:51:36,932 [DEBUG] 	Service initialised ({'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'content_type': 'application/json', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'basepath': '/sitedb/data/prod/', 'method': None, 'accept_type': 'application/json', 'timeout': 30, 'requests': {'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'cacheduration': 24, 'host': 'cmsweb.cern.ch', 'accept_type': 'application/json', 'content_type': 'application/json', 'logger': <logging.Logger instance at 0x1ea74518>, 'conn': <httplib.HTTPSConnection instance at 0x1ebca248>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 24, 'inputdata': {}}):
+	 host: cmsweb.cern.ch, basepath: /sitedb/data/prod/ (application/json)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_sitedbcache (duration 24 hours, max reuse 24.0 hours)
+2014-06-24 22:51:37,524 [DEBUG] 	Linux lxplus432.cern.ch 2.6.18-371.6.1.el5 #1 SMP Thu Mar 13 09:18:14 CET 2014 x86_64 x86_64 x86_64 GNU/Linux
+ 
+Used properties:
+Linux lxplus432.cern.ch 2.6.18-371.6.1.el5 #1 SMP Thu Mar 13 09:18:14 CET 2014 x86_64 x86_64 x86_64 GNU/Linux
+ 
+Used properties:
+   CMSSW.datasetpath : /QCD_Pt_80_TuneZ2_5p02TeV/HiWinter13-pp_STARTHI53_V25-v1/GEN-SIM-RECO
+   CMSSW.events_per_job : 2500
+   CMSSW.output_file : test.root
+   CMSSW.pset : runGlobalAndRegit_cfg.py
+   CMSSW.total_number_of_events : -1
+   CRAB.create : 
+   CRAB.jobtype : cmssw
+   CRAB.scheduler : remoteGlidein
+   CRAB.submit : 
+   CRAB.use_server : 0
+   GRID.lcg_catalog_type : lfc
+   GRID.lfc_home : /grid/cms
+   GRID.lfc_host : lfc-cms-test.cern.ch
+   GRID.proxy_server : myproxy.cern.ch
+   GRID.rb : CERN
+   GRID.retry_count : 2
+   GRID.virtual_organization : cms
+   USER.copy_data : 1
+   USER.publish_data : 0
+   USER.return_data : 0
+   USER.storage_element : T2_US_MIT
+   USER.user_remote_dir : RegitPYTHIA80_JUNE24_ppCuts_2014
+End of used properties.
+
+2014-06-24 22:51:38,002 [DEBUG] 	CMSSW::__init__
+2014-06-24 22:51:38,002 [DEBUG] 	Scram::Scram() version is 2
+2014-06-24 22:51:38,002 [DEBUG] 	Scram::Scram() arch is slc5_amd64_gcc462
+2014-06-24 22:51:38,003 [DEBUG] 	Downloading file [https://cmssdt.cern.ch/SDT/cgi-bin] to [/afs/cern.ch/user/z/ztu/.cms_crab/ReleasesXML?anytype=1].
+2014-06-24 22:51:38,003 [DEBUG] 	Service initialised ({'endpoint': 'https://cmssdt.cern.ch/SDT/cgi-bin', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_crab', 'basepath': '/SDT/cgi-bin/', 'method': None, 'timeout': 20, 'requests': {'endpoint': 'https://cmssdt.cern.ch/SDT/cgi-bin', 'timeout': 20, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_crab', 'cacheduration': 0.5, 'host': 'cmssdt.cern.ch', 'accept_type': 'text/html', 'content_type': 'application/x-www-form-urlencoded', 'logger': <logging.Logger instance at 0x1ea74518>, 'type': 'txt/csv', 'conn': <httplib.HTTPSConnection instance at 0x1ee0dc68>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 0.5, 'type': 'txt/csv', 'inputdata': {}}):
+	 host: cmssdt.cern.ch, basepath: /SDT/cgi-bin/ (text/html)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_crab (duration 0.5 hours, max reuse 24.0 hours)
+2014-06-24 22:51:38,004 [DEBUG] 	/afs/cern.ch/user/z/ztu/.cms_crab/0_GET_ReleasesXML?anytype=1 expired, refreshing cache
+2014-06-24 22:51:38,004 [DEBUG] 	getData: 
+	url: /SDT/cgi-bin/ReleasesXML?anytype=1
+	data: {}
+2014-06-24 22:51:38,584 [DEBUG] 	Service initialised ({'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'content_type': 'application/json', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'basepath': '/sitedb/data/prod/', 'method': None, 'accept_type': 'application/json', 'timeout': 30, 'requests': {'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'host': 'cmsweb.cern.ch', 'accept_type': 'application/json', 'content_type': 'application/json', 'logger': <logging.Logger instance at 0x1ea74518>, 'conn': <httplib.HTTPSConnection instance at 0x1ec583b0>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 0.5, 'inputdata': {}}):
+	 host: cmsweb.cern.ch, basepath: /sitedb/data/prod/ (application/json)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_sitedbcache (duration 0.5 hours, max reuse 24.0 hours)
+2014-06-24 22:51:38,584 [DEBUG] 	Service initialised ({'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'content_type': 'application/json', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'basepath': '/sitedb/data/prod/', 'method': None, 'accept_type': 'application/json', 'timeout': 30, 'requests': {'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'host': 'cmsweb.cern.ch', 'accept_type': 'application/json', 'content_type': 'application/json', 'logger': <logging.Logger instance at 0x1ea74518>, 'conn': <httplib.HTTPSConnection instance at 0x1ec58440>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 0.5, 'inputdata': {}}):
+	 host: cmsweb.cern.ch, basepath: /sitedb/data/prod/ (application/json)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_sitedbcache (duration 0.5 hours, max reuse 24.0 hours)
+2014-06-24 22:51:38,584 [DEBUG] 	Input whitelist: 
+2014-06-24 22:51:38,584 [DEBUG] 	Input blacklist: 
+2014-06-24 22:51:38,584 [DEBUG] 	Converted whitelist: 
+2014-06-24 22:51:38,584 [DEBUG] 	Converted blacklist: 
+2014-06-24 22:51:38,657 [INFO] 	Contacting Data Discovery Services ...
+2014-06-24 22:51:38,657 [INFO] 	Accessing DBS at: https://cmsweb.cern.ch/dbs/prod/global/DBSReader
+2014-06-24 22:51:38,658 [INFO] 	Will do Data Discovery using  DBS3
+2014-06-24 22:51:39,782 [INFO] 	DBS3 lookup took  0.57 sec
+2014-06-24 22:51:39,826 [INFO] 	Datatype is mc
+2014-06-24 22:51:39,829 [DEBUG] 	DLS interface: DLS_TYPE_PHEDEX Server https://cmsweb.cern.ch/phedex/datasvc/xml/prod/
+2014-06-24 22:51:40,667 [INFO] 	Requested dataset: /QCD_Pt_80_TuneZ2_5p02TeV/HiWinter13-pp_STARTHI53_V25-v1/GEN-SIM-RECO has 1000000 events in 2 blocks.
+
+2014-06-24 22:51:40,667 [DEBUG] 	Job splitting method: EventBased
+2014-06-24 22:51:40,668 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/afs/cern.ch/user/z/ztu/.cms_crab/site_black_list.conf].
+2014-06-24 22:51:40,668 [DEBUG] 	Service initialised ({'endpoint': 'http://cmsdoc.cern.ch/cms/LCG/crab/config/', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_crab', 'basepath': '/cms/LCG/crab/config/', 'method': None, 'timeout': 20, 'requests': {'endpoint': 'http://cmsdoc.cern.ch/cms/LCG/crab/config/', 'timeout': 20, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_crab', 'cacheduration': 0.5, 'host': 'cmsdoc.cern.ch', 'accept_type': 'text/html', 'content_type': 'application/x-www-form-urlencoded', 'logger': <logging.Logger instance at 0x1ea74518>, 'type': 'txt/csv', 'conn': <httplib.HTTPConnection instance at 0x1ef05638>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 0.5, 'type': 'txt/csv', 'inputdata': {}}):
+	 host: cmsdoc.cern.ch, basepath: /cms/LCG/crab/config/ (text/html)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_crab (duration 0.5 hours, max reuse 24.0 hours)
+2014-06-24 22:51:40,668 [DEBUG] 	Enforced black list: ['TAPE', 'srm-cms.cern.ch', 'cmssrm.fnal.gov', 'T1_FR', 'T1_RU', 'T1_TW', 'cmseos.fnal.gov', 'cmsdca2.fnal.gov', 'T2_PK_NCP', 'T3_US_Vanderbilt_EC2'] 
+2014-06-24 22:51:40,669 [DEBUG] 	Service initialised ({'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'content_type': 'application/json', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'basepath': '/sitedb/data/prod/', 'method': None, 'accept_type': 'application/json', 'timeout': 30, 'requests': {'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'host': 'cmsweb.cern.ch', 'accept_type': 'application/json', 'content_type': 'application/json', 'logger': <logging.Logger instance at 0x1ea74518>, 'conn': <httplib.HTTPSConnection instance at 0x1ef05638>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 0.5, 'inputdata': {}}):
+	 host: cmsweb.cern.ch, basepath: /sitedb/data/prod/ (application/json)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_sitedbcache (duration 0.5 hours, max reuse 24.0 hours)
+2014-06-24 22:51:40,669 [DEBUG] 	Service initialised ({'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'content_type': 'application/json', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'basepath': '/sitedb/data/prod/', 'method': None, 'accept_type': 'application/json', 'timeout': 30, 'requests': {'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'host': 'cmsweb.cern.ch', 'accept_type': 'application/json', 'content_type': 'application/json', 'logger': <logging.Logger instance at 0x1ea74518>, 'conn': <httplib.HTTPSConnection instance at 0x1ef05d40>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 0.5, 'inputdata': {}}):
+	 host: cmsweb.cern.ch, basepath: /sitedb/data/prod/ (application/json)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_sitedbcache (duration 0.5 hours, max reuse 24.0 hours)
+2014-06-24 22:51:40,669 [DEBUG] 	Input whitelist: 
+2014-06-24 22:51:40,669 [DEBUG] 	Input blacklist: TAPE, srm-cms.cern.ch, cmssrm.fnal.gov, T1_FR, T1_RU, T1_TW, cmseos.fnal.gov, cmsdca2.fnal.gov, T2_PK_NCP, T3_US_Vanderbilt_EC2
+2014-06-24 22:51:40,670 [DEBUG] 	/afs/cern.ch/user/z/ztu/.cms_sitedbcache/0_GET_site-names.json expired, refreshing cache
+2014-06-24 22:51:40,670 [DEBUG] 	getData: 
+	url: /sitedb/data/prod/site-names
+	data: {}
+2014-06-24 22:51:41,485 [DEBUG] 	/afs/cern.ch/user/z/ztu/.cms_sitedbcache/0_GET_site-resources.json expired, refreshing cache
+2014-06-24 22:51:41,485 [DEBUG] 	getData: 
+	url: /sitedb/data/prod/site-resources
+	data: {}
+2014-06-24 22:51:42,025 [DEBUG] 	Converted whitelist: 
+2014-06-24 22:51:42,025 [DEBUG] 	Converted blacklist: pcncp22.ncp.edu.pk, brazil.accre.vanderbilt.edu, srm-cms-mss.jinr-t1.ru, srm-cms.cern.ch, cmssrm.fnal.gov, srm-cms.jinr-t1.ru, cmseos.fnal.gov, ccsrm.in2p3.fr, TAPE, cmsdca2.fnal.gov, srm2.grid.sinica.edu.tw
+2014-06-24 22:51:42,025 [INFO] 	SE black list applied to data location: ['TAPE', 'srm-cms.cern.ch', 'cmssrm.fnal.gov', 'T1_FR', 'T1_RU', 'T1_TW', 'cmseos.fnal.gov', 'cmsdca2.fnal.gov', 'T2_PK_NCP', 'T3_US_Vanderbilt_EC2']
+2014-06-24 22:51:42,026 [DEBUG] 	List of blocks and used locations (SE):
+2014-06-24 22:51:42,030 [DEBUG] 	/QCD_Pt_80_TuneZ2_5p02TeV/HiWinter13-pp_STARTHI53_V25-v1/GEN-SIM-RECO#580bc63a-76c3-11e2-85b5-00221959e72f : ['se01.cmsaf.mit.edu', 'uosaf0007.sscc.uos.ac.kr']
+2014-06-24 22:51:42,030 [DEBUG] 	/QCD_Pt_80_TuneZ2_5p02TeV/HiWinter13-pp_STARTHI53_V25-v1/GEN-SIM-RECO#7beffe66-75e9-11e2-85b5-00221959e72f : ['se01.cmsaf.mit.edu', 'uosaf0007.sscc.uos.ac.kr']
+2014-06-24 22:51:42,030 [DEBUG] 	Events in Block File 18880
+2014-06-24 22:51:42,158 [DEBUG] 	Events in Block File 981120
+2014-06-24 22:51:42,194 [DEBUG] 	
+Job 9 can run over 2500 events.
+Job 9 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 10 can run over 2500 events.
+Job 10 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 11 can run over 2500 events.
+Job 11 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 12 can run over 2500 events.
+Job 12 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 13 can run over 2500 events.
+Job 13 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 14 can run over 2500 events.
+Job 14 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 15 can run over 2500 events.
+Job 15 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 16 can run over 2500 events.
+Job 16 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 17 can run over 2500 events.
+Job 17 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 18 can run over 2500 events.
+Job 18 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 19 can run over 2500 events.
+Job 19 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 20 can run over 2500 events.
+Job 20 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 21 can run over 2500 events.
+Job 21 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 22 can run over 2500 events.
+Job 22 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 23 can run over 2500 events.
+Job 23 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 24 can run over 2500 events.
+Job 24 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 25 can run over 2500 events.
+Job 25 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 26 can run over 2500 events.
+Job 26 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 27 can run over 2500 events.
+Job 27 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 28 can run over 2500 events.
+Job 28 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 29 can run over 2500 events.
+Job 29 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 30 can run over 2500 events.
+Job 30 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 31 can run over 2500 events.
+Job 31 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 32 can run over 2500 events.
+Job 32 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 33 can run over 2500 events.
+Job 33 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 34 can run over 2500 events.
+Job 34 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 35 can run over 2500 events.
+Job 35 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 36 can run over 2500 events.
+Job 36 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 37 can run over 2500 events.
+Job 37 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 38 can run over 2500 events.
+Job 38 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 39 can run over 2500 events.
+Job 39 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 40 can run over 2500 events.
+Job 40 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 41 can run over 2500 events.
+Job 41 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 42 can run over 2500 events.
+Job 42 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 43 can run over 2500 events.
+Job 43 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 44 can run over 2500 events.
+Job 44 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 45 can run over 2500 events.
+Job 45 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 46 can run over 2500 events.
+Job 46 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 47 can run over 2500 events.
+Job 47 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 48 can run over 2500 events.
+Job 48 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 49 can run over 2500 events.
+Job 49 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 50 can run over 2500 events.
+Job 50 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 51 can run over 2500 events.
+Job 51 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 52 can run over 2500 events.
+Job 52 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 53 can run over 2500 events.
+Job 53 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 54 can run over 2500 events.
+Job 54 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 55 can run over 2500 events.
+Job 55 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 56 can run over 2500 events.
+Job 56 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 57 can run over 2500 events.
+Job 57 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 58 can run over 2500 events.
+Job 58 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 59 can run over 2500 events.
+Job 59 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 60 can run over 2500 events.
+Job 60 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 61 can run over 2500 events.
+Job 61 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 62 can run over 2500 events.
+Job 62 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 63 can run over 2500 events.
+Job 63 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 64 can run over 2500 events.
+Job 64 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 65 can run over 2500 events.
+Job 65 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 66 can run over 2500 events.
+Job 66 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 67 can run over 2500 events.
+Job 67 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 68 can run over 2500 events.
+Job 68 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 69 can run over 2500 events.
+Job 69 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 70 can run over 2500 events.
+Job 70 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 71 can run over 2500 events.
+Job 71 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 72 can run over 2500 events.
+Job 72 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 73 can run over 2500 events.
+Job 73 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 74 can run over 2500 events.
+Job 74 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 75 can run over 2500 events.
+Job 75 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 76 can run over 2500 events.
+Job 76 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 77 can run over 2500 events.
+Job 77 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 78 can run over 2500 events.
+Job 78 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 79 can run over 2500 events.
+Job 79 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 80 can run over 2500 events.
+Job 80 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 81 can run over 2500 events.
+Job 81 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 82 can run over 2500 events.
+Job 82 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 83 can run over 2500 events.
+Job 83 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 84 can run over 2500 events.
+Job 84 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 85 can run over 2500 events.
+Job 85 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 86 can run over 2500 events.
+Job 86 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 87 can run over 2500 events.
+Job 87 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 88 can run over 2500 events.
+Job 88 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 89 can run over 2500 events.
+Job 89 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 90 can run over 2500 events.
+Job 90 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 91 can run over 2500 events.
+Job 91 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 92 can run over 2500 events.
+Job 92 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 93 can run over 2500 events.
+Job 93 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 94 can run over 2500 events.
+Job 94 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 95 can run over 2500 events.
+Job 95 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 96 can run over 2500 events.
+Job 96 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 97 can run over 2500 events.
+Job 97 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 98 can run over 2500 events.
+Job 98 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 99 can run over 2500 events.
+Job 99 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 100 can run over 2500 events.
+Job 100 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 101 can run over 2500 events.
+Job 101 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 102 can run over 2500 events.
+Job 102 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 103 can run over 2500 events.
+Job 103 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 104 can run over 2500 events.
+Job 104 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 105 can run over 2500 events.
+Job 105 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 106 can run over 2500 events.
+Job 106 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 107 can run over 2500 events.
+Job 107 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 108 can run over 2500 events.
+Job 108 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 109 can run over 2500 events.
+Job 109 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 110 can run over 2500 events.
+Job 110 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 111 can run over 2500 events.
+Job 111 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 112 can run over 2500 events.
+Job 112 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 113 can run over 2500 events.
+Job 113 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 114 can run over 2500 events.
+Job 114 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 115 can run over 2500 events.
+Job 115 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 116 can run over 2500 events.
+Job 116 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 117 can run over 2500 events.
+Job 117 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 118 can run over 2500 events.
+Job 118 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 119 can run over 2500 events.
+Job 119 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 120 can run over 2500 events.
+Job 120 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 121 can run over 2500 events.
+Job 121 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 122 can run over 2500 events.
+Job 122 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 123 can run over 2500 events.
+Job 123 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 124 can run over 2500 events.
+Job 124 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 125 can run over 2500 events.
+Job 125 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 126 can run over 2500 events.
+Job 126 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 127 can run over 2500 events.
+Job 127 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 128 can run over 2500 events.
+Job 128 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 129 can run over 2500 events.
+Job 129 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 130 can run over 2500 events.
+Job 130 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 131 can run over 2500 events.
+Job 131 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 132 can run over 2500 events.
+Job 132 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 133 can run over 2500 events.
+Job 133 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 134 can run over 2500 events.
+Job 134 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 135 can run over 2500 events.
+Job 135 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 136 can run over 2500 events.
+Job 136 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 137 can run over 2500 events.
+Job 137 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 138 can run over 2500 events.
+Job 138 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 139 can run over 2500 events.
+Job 139 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 140 can run over 2500 events.
+Job 140 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 141 can run over 2500 events.
+Job 141 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 142 can run over 2500 events.
+Job 142 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 143 can run over 2500 events.
+Job 143 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 144 can run over 2500 events.
+Job 144 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 145 can run over 2500 events.
+Job 145 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 146 can run over 2500 events.
+Job 146 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 147 can run over 2500 events.
+Job 147 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 148 can run over 2500 events.
+Job 148 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 149 can run over 2500 events.
+Job 149 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 150 can run over 2500 events.
+Job 150 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 151 can run over 2500 events.
+Job 151 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 152 can run over 2500 events.
+Job 152 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 153 can run over 2500 events.
+Job 153 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 154 can run over 2500 events.
+Job 154 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 155 can run over 2500 events.
+Job 155 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 156 can run over 2500 events.
+Job 156 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 157 can run over 2500 events.
+Job 157 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 158 can run over 2500 events.
+Job 158 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 159 can run over 2500 events.
+Job 159 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 160 can run over 2500 events.
+Job 160 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 161 can run over 2500 events.
+Job 161 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 162 can run over 2500 events.
+Job 162 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 163 can run over 2500 events.
+Job 163 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 164 can run over 2500 events.
+Job 164 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 165 can run over 2500 events.
+Job 165 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 166 can run over 2500 events.
+Job 166 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 167 can run over 2500 events.
+Job 167 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 168 can run over 2500 events.
+Job 168 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 169 can run over 2500 events.
+Job 169 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 170 can run over 2500 events.
+Job 170 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 171 can run over 2500 events.
+Job 171 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 172 can run over 2500 events.
+Job 172 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 173 can run over 2500 events.
+Job 173 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 174 can run over 2500 events.
+Job 174 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 175 can run over 2500 events.
+Job 175 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 176 can run over 2500 events.
+Job 176 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 177 can run over 2500 events.
+Job 177 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 178 can run over 2500 events.
+Job 178 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 179 can run over 2500 events.
+Job 179 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 180 can run over 2500 events.
+Job 180 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 181 can run over 2500 events.
+Job 181 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 182 can run over 2500 events.
+Job 182 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 183 can run over 2500 events.
+Job 183 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 184 can run over 2500 events.
+Job 184 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 185 can run over 2500 events.
+Job 185 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 186 can run over 2500 events.
+Job 186 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 187 can run over 2500 events.
+Job 187 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 188 can run over 2500 events.
+Job 188 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 189 can run over 2500 events.
+Job 189 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 190 can run over 2500 events.
+Job 190 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 191 can run over 2500 events.
+Job 191 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 192 can run over 2500 events.
+Job 192 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 193 can run over 2500 events.
+Job 193 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 194 can run over 2500 events.
+Job 194 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 195 can run over 2500 events.
+Job 195 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 196 can run over 2500 events.
+Job 196 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 197 can run over 2500 events.
+Job 197 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 198 can run over 2500 events.
+Job 198 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 199 can run over 2500 events.
+Job 199 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 200 can run over 2500 events.
+Job 200 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 201 can run over 2500 events.
+Job 201 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 202 can run over 2500 events.
+Job 202 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 203 can run over 2500 events.
+Job 203 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 204 can run over 2500 events.
+Job 204 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 205 can run over 2500 events.
+Job 205 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 206 can run over 2500 events.
+Job 206 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 207 can run over 2500 events.
+Job 207 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 208 can run over 2500 events.
+Job 208 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 209 can run over 2500 events.
+Job 209 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 210 can run over 2500 events.
+Job 210 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 211 can run over 2500 events.
+Job 211 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 212 can run over 2500 events.
+Job 212 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 213 can run over 2500 events.
+Job 213 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 214 can run over 2500 events.
+Job 214 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 215 can run over 2500 events.
+Job 215 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 216 can run over 2500 events.
+Job 216 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 217 can run over 2500 events.
+Job 217 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 218 can run over 2500 events.
+Job 218 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 219 can run over 2500 events.
+Job 219 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 220 can run over 2500 events.
+Job 220 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 221 can run over 2500 events.
+Job 221 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 222 can run over 2500 events.
+Job 222 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 223 can run over 2500 events.
+Job 223 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 224 can run over 2500 events.
+Job 224 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 225 can run over 2500 events.
+Job 225 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 226 can run over 2500 events.
+Job 226 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 227 can run over 2500 events.
+Job 227 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 228 can run over 2500 events.
+Job 228 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 229 can run over 2500 events.
+Job 229 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 230 can run over 2500 events.
+Job 230 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 231 can run over 2500 events.
+Job 231 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 232 can run over 2500 events.
+Job 232 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 233 can run over 2500 events.
+Job 233 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 234 can run over 2500 events.
+Job 234 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 235 can run over 2500 events.
+Job 235 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 236 can run over 2500 events.
+Job 236 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 237 can run over 2500 events.
+Job 237 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 238 can run over 2500 events.
+Job 238 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 239 can run over 2500 events.
+Job 239 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 240 can run over 2500 events.
+Job 240 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 241 can run over 2500 events.
+Job 241 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 242 can run over 2500 events.
+Job 242 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 243 can run over 2500 events.
+Job 243 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 244 can run over 2500 events.
+Job 244 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 245 can run over 2500 events.
+Job 245 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 246 can run over 2500 events.
+Job 246 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 247 can run over 2500 events.
+Job 247 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 248 can run over 2500 events.
+Job 248 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 249 can run over 2500 events.
+Job 249 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 250 can run over 2500 events.
+Job 250 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 251 can run over 2500 events.
+Job 251 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 252 can run over 2500 events.
+Job 252 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 253 can run over 2500 events.
+Job 253 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 254 can run over 2500 events.
+Job 254 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 255 can run over 2500 events.
+Job 255 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 256 can run over 2500 events.
+Job 256 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 257 can run over 2500 events.
+Job 257 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 258 can run over 2500 events.
+Job 258 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 259 can run over 2500 events.
+Job 259 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 260 can run over 2500 events.
+Job 260 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 261 can run over 2500 events.
+Job 261 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 262 can run over 2500 events.
+Job 262 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 263 can run over 2500 events.
+Job 263 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 264 can run over 2500 events.
+Job 264 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 265 can run over 2500 events.
+Job 265 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 266 can run over 2500 events.
+Job 266 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 267 can run over 2500 events.
+Job 267 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 268 can run over 2500 events.
+Job 268 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 269 can run over 2500 events.
+Job 269 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 270 can run over 2500 events.
+Job 270 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 271 can run over 2500 events.
+Job 271 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 272 can run over 2500 events.
+Job 272 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 273 can run over 2500 events.
+Job 273 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 274 can run over 2500 events.
+Job 274 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 275 can run over 2500 events.
+Job 275 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 276 can run over 2500 events.
+Job 276 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 277 can run over 2500 events.
+Job 277 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 278 can run over 2500 events.
+Job 278 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 279 can run over 2500 events.
+Job 279 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 280 can run over 2500 events.
+Job 280 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 281 can run over 2500 events.
+Job 281 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 282 can run over 2500 events.
+Job 282 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 283 can run over 2500 events.
+Job 283 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 284 can run over 2500 events.
+Job 284 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 285 can run over 2500 events.
+Job 285 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 286 can run over 2500 events.
+Job 286 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 287 can run over 2500 events.
+Job 287 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 288 can run over 2500 events.
+Job 288 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 289 can run over 2500 events.
+Job 289 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 290 can run over 2500 events.
+Job 290 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 291 can run over 2500 events.
+Job 291 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 292 can run over 2500 events.
+Job 292 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 293 can run over 2500 events.
+Job 293 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 294 can run over 2500 events.
+Job 294 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 295 can run over 2500 events.
+Job 295 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 296 can run over 2500 events.
+Job 296 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 297 can run over 2500 events.
+Job 297 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 298 can run over 2500 events.
+Job 298 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 299 can run over 2500 events.
+Job 299 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 300 can run over 2500 events.
+Job 300 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 301 can run over 2500 events.
+Job 301 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 302 can run over 2500 events.
+Job 302 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 303 can run over 2500 events.
+Job 303 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 304 can run over 2500 events.
+Job 304 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 305 can run over 2500 events.
+Job 305 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 306 can run over 2500 events.
+Job 306 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 307 can run over 2500 events.
+Job 307 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 308 can run over 2500 events.
+Job 308 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 309 can run over 2500 events.
+Job 309 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 310 can run over 2500 events.
+Job 310 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 311 can run over 2500 events.
+Job 311 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 312 can run over 2500 events.
+Job 312 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 313 can run over 2500 events.
+Job 313 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 314 can run over 2500 events.
+Job 314 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 315 can run over 2500 events.
+Job 315 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 316 can run over 2500 events.
+Job 316 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 317 can run over 2500 events.
+Job 317 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 318 can run over 2500 events.
+Job 318 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 319 can run over 2500 events.
+Job 319 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 320 can run over 2500 events.
+Job 320 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 321 can run over 2500 events.
+Job 321 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 322 can run over 2500 events.
+Job 322 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 323 can run over 2500 events.
+Job 323 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 324 can run over 2500 events.
+Job 324 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 325 can run over 2500 events.
+Job 325 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 326 can run over 2500 events.
+Job 326 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 327 can run over 2500 events.
+Job 327 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 328 can run over 2500 events.
+Job 328 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 329 can run over 2500 events.
+Job 329 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 330 can run over 2500 events.
+Job 330 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 331 can run over 2500 events.
+Job 331 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 332 can run over 2500 events.
+Job 332 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 333 can run over 2500 events.
+Job 333 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 334 can run over 2500 events.
+Job 334 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 335 can run over 2500 events.
+Job 335 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 336 can run over 2500 events.
+Job 336 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 337 can run over 2500 events.
+Job 337 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 338 can run over 2500 events.
+Job 338 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 339 can run over 2500 events.
+Job 339 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 340 can run over 2500 events.
+Job 340 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 341 can run over 2500 events.
+Job 341 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 342 can run over 2500 events.
+Job 342 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 343 can run over 2500 events.
+Job 343 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 344 can run over 2500 events.
+Job 344 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 345 can run over 2500 events.
+Job 345 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 346 can run over 2500 events.
+Job 346 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 347 can run over 2500 events.
+Job 347 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 348 can run over 2500 events.
+Job 348 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 349 can run over 2500 events.
+Job 349 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 350 can run over 2500 events.
+Job 350 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 351 can run over 2500 events.
+Job 351 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 352 can run over 2500 events.
+Job 352 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 353 can run over 2500 events.
+Job 353 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 354 can run over 2500 events.
+Job 354 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 355 can run over 2500 events.
+Job 355 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 356 can run over 2500 events.
+Job 356 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 357 can run over 2500 events.
+Job 357 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 358 can run over 2500 events.
+Job 358 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 359 can run over 2500 events.
+Job 359 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 360 can run over 2500 events.
+Job 360 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 361 can run over 2500 events.
+Job 361 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 362 can run over 2500 events.
+Job 362 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 363 can run over 2500 events.
+Job 363 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 364 can run over 2500 events.
+Job 364 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 365 can run over 2500 events.
+Job 365 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 366 can run over 2500 events.
+Job 366 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 367 can run over 2500 events.
+Job 367 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 368 can run over 2500 events.
+Job 368 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 369 can run over 2500 events.
+Job 369 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 370 can run over 2500 events.
+Job 370 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 371 can run over 2500 events.
+Job 371 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 372 can run over 2500 events.
+Job 372 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 373 can run over 2500 events.
+Job 373 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 374 can run over 2500 events.
+Job 374 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 375 can run over 2500 events.
+Job 375 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 376 can run over 2500 events.
+Job 376 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 377 can run over 2500 events.
+Job 377 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 378 can run over 2500 events.
+Job 378 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 379 can run over 2500 events.
+Job 379 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 380 can run over 2500 events.
+Job 380 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 381 can run over 2500 events.
+Job 381 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 382 can run over 2500 events.
+Job 382 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 383 can run over 2500 events.
+Job 383 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 384 can run over 2500 events.
+Job 384 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 385 can run over 2500 events.
+Job 385 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 386 can run over 2500 events.
+Job 386 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 387 can run over 2500 events.
+Job 387 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 388 can run over 2500 events.
+Job 388 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 389 can run over 2500 events.
+Job 389 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 390 can run over 2500 events.
+Job 390 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 391 can run over 2500 events.
+Job 391 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 392 can run over 2500 events.
+Job 392 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 393 can run over 2500 events.
+Job 393 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 394 can run over 2500 events.
+Job 394 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 395 can run over 2500 events.
+Job 395 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 396 can run over 2500 events.
+Job 396 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 397 can run over 2500 events.
+Job 397 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 398 can run over 2500 events.
+Job 398 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 399 can run over 2500 events.
+Job 399 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 400 can run over 2500 events.
+Job 400 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+Job 401 can run over 1120 events.
+Job 401 Destination: ['T2_US_MIT', 'T3_KR_UOS']
+
+2014-06-24 22:51:42,194 [INFO] 	401 job(s) can run on 1000000 events.
+
+2014-06-24 22:51:42,194 [DEBUG] 	Selected sites for block /QCD_Pt_80_TuneZ2_5p02TeV/HiWinter13-pp_STARTHI53_V25-v1/GEN-SIM-RECO#580bc63a-76c3-11e2-85b5-00221959e72f via blacklist are se01.cmsaf.mit.edu, uosaf0007.sscc.uos.ac.kr.
+
+2014-06-24 22:51:42,195 [DEBUG] 	Selected sites for block /QCD_Pt_80_TuneZ2_5p02TeV/HiWinter13-pp_STARTHI53_V25-v1/GEN-SIM-RECO#7beffe66-75e9-11e2-85b5-00221959e72f via blacklist are se01.cmsaf.mit.edu, uosaf0007.sscc.uos.ac.kr.
+
+2014-06-24 22:51:42,197 [INFO] 	List of jobs and available destination sites:
+
+Block     1: jobs                  1-8: sites: T2_US_MIT, T3_KR_UOS
+Block     2: jobs                9-401: sites: T2_US_MIT, T3_KR_UOS
+
+2014-06-24 22:51:42,253 [DEBUG] 	PsetManipulator::__init__: PSet file = runGlobalAndRegit_cfg.py
+2014-06-24 22:51:47,326 [DEBUG] 	Output from TFileService test.root already in output files
+2014-06-24 22:51:47,980 [DEBUG] 	lib /afs/cern.ch/user/z/ztu/scratch0/CMSSW_5_3_16/lib to be tarred
+2014-06-24 22:51:51,328 [DEBUG] 	data RiceHIG/Skim2013/data to be tarred
+2014-06-24 22:51:51,716 [DEBUG] 	data HeavyIonsAnalysis/Configuration/data to be tarred
+2014-06-24 22:51:52,138 [DEBUG] 	data RecoHI/HiJetAlgos/data to be tarred
+2014-06-24 22:51:53,240 [DEBUG] 	data RecoHI/HiCentralityAlgos/data to be tarred
+2014-06-24 22:51:54,090 [DEBUG] 	Creator: JobType CMSSW created
+2014-06-24 22:51:54,090 [DEBUG] 	Creator: total # of jobs = 401
+2014-06-24 22:51:54,091 [DEBUG] 	Creator constructor finished
+2014-06-24 22:51:55,956 [DEBUG] 	parseRange_ None
+2014-06-24 22:51:56,106 [DEBUG] 	Scram::Scram() version is 2
+2014-06-24 22:51:56,106 [DEBUG] 	Scram::Scram() arch is slc5_amd64_gcc462
+2014-06-24 22:51:56,107 [DEBUG] 	Creator::run() called
+2014-06-24 22:51:56,107 [DEBUG] 	Scram::Scram() version is 2
+2014-06-24 22:51:56,108 [DEBUG] 	Scram::Scram() arch is slc5_amd64_gcc462
+2014-06-24 22:51:58,191 [DEBUG] 	Service initialised ({'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'content_type': 'application/json', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'basepath': '/sitedb/data/prod/', 'method': None, 'accept_type': 'application/json', 'timeout': 30, 'requests': {'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'cacheduration': 24, 'host': 'cmsweb.cern.ch', 'accept_type': 'application/json', 'content_type': 'application/json', 'logger': <logging.Logger instance at 0x1ea74518>, 'conn': <httplib.HTTPSConnection instance at 0x200455a8>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 24, 'inputdata': {}}):
+	 host: cmsweb.cern.ch, basepath: /sitedb/data/prod/ (application/json)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_sitedbcache (duration 24 hours, max reuse 24.0 hours)
+2014-06-24 22:51:58,814 [DEBUG] 	Service initialised ({'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'content_type': 'application/json', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'basepath': '/sitedb/data/prod/', 'method': None, 'accept_type': 'application/json', 'timeout': 30, 'requests': {'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'cacheduration': 24, 'host': 'cmsweb.cern.ch', 'accept_type': 'application/json', 'content_type': 'application/json', 'logger': <logging.Logger instance at 0x1ea74518>, 'conn': <httplib.HTTPSConnection instance at 0x20045c20>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 24, 'inputdata': {}}):
+	 host: cmsweb.cern.ch, basepath: /sitedb/data/prod/ (application/json)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_sitedbcache (duration 24 hours, max reuse 24.0 hours)
+2014-06-24 22:51:59,794 [INFO] 	Checking remote location
+2014-06-24 22:51:59,795 [DEBUG] 	protocol = srm-lcg
+endpoint = srm://se01.cmsaf.mit.edu:8443/srm/v2/server?SFN=/mnt/hadoop/cms/store/user/ztu/RegitPYTHIA80_JUNE24_ppCuts_2014/
+
+2014-06-24 22:52:01,621 [DEBUG] 	Command:	unset LD_LIBRARY_PATH; unset GLITE_ENV_SET; export PATH=/usr/bin:/bin; source /etc/profile; source /afs/cern.ch/project/gd/LCG-share/3.2.11-1/external/etc/profile.d/grid-env.sh ; lcg-ls -d -b -D srmv2 srm://se01.cmsaf.mit.edu:8443/srm/v2/server?SFN=/mnt/hadoop/cms/store/user/ztu/RegitPYTHIA80_JUNE24_ppCuts_2014/
+2014-06-24 22:52:01,622 [DEBUG] 	ExitCode:	1
+2014-06-24 22:52:01,622 [DEBUG] 	Output:	/mnt/hadoop/cms/store/user/ztu/RegitPYTHIA80_JUNE24_ppCuts_2014/: [SE][Ls][SRM_INVALID_PATH] No such file or directory.
+
+2014-06-24 22:52:02,494 [INFO] 	Creating 401 jobs, please wait...
+2014-06-24 22:52:02,494 [DEBUG] 	Creation Time: 6.38743591309
+2014-06-24 22:52:02,495 [INFO] 	Total of 401 jobs created.
+
+2014-06-24 22:52:02,495 [DEBUG] 	Submitter::run() called
+2014-06-24 22:52:02,639 [DEBUG] 	Service initialised ({'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'content_type': 'application/json', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'basepath': '/sitedb/data/prod/', 'method': None, 'accept_type': 'application/json', 'timeout': 30, 'requests': {'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'host': 'cmsweb.cern.ch', 'accept_type': 'application/json', 'content_type': 'application/json', 'logger': <logging.Logger instance at 0x1ea74518>, 'conn': <httplib.HTTPSConnection instance at 0x1ec60908>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 0.5, 'inputdata': {}}):
+	 host: cmsweb.cern.ch, basepath: /sitedb/data/prod/ (application/json)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_sitedbcache (duration 0.5 hours, max reuse 24.0 hours)
+2014-06-24 22:52:02,640 [DEBUG] 	Service initialised ({'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'content_type': 'application/json', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'basepath': '/sitedb/data/prod/', 'method': None, 'accept_type': 'application/json', 'timeout': 30, 'requests': {'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'host': 'cmsweb.cern.ch', 'accept_type': 'application/json', 'content_type': 'application/json', 'logger': <logging.Logger instance at 0x1ea74518>, 'conn': <httplib.HTTPSConnection instance at 0x1ec60950>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 0.5, 'inputdata': {}}):
+	 host: cmsweb.cern.ch, basepath: /sitedb/data/prod/ (application/json)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_sitedbcache (duration 0.5 hours, max reuse 24.0 hours)
+2014-06-24 22:52:02,640 [DEBUG] 	Input whitelist: 
+2014-06-24 22:52:02,640 [DEBUG] 	Input blacklist: 
+2014-06-24 22:52:02,640 [DEBUG] 	Converted whitelist: 
+2014-06-24 22:52:02,640 [DEBUG] 	Converted blacklist: 
+2014-06-24 22:52:02,640 [DEBUG] 	nsjobs -1
+2014-06-24 22:52:02,640 [DEBUG] 	Total jobs 401
+2014-06-24 22:52:02,784 [DEBUG] 	nj_list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401]
+2014-06-24 22:52:03,084 [DEBUG] 	GRIDNAME: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ztu/CN=732466/CN=Zhoudunming Tu 
+2014-06-24 22:52:03,108 [DEBUG] 	Service initialised ({'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'content_type': 'application/json', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'basepath': '/sitedb/data/prod/', 'method': None, 'accept_type': 'application/json', 'timeout': 30, 'requests': {'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'cacheduration': 24, 'host': 'cmsweb.cern.ch', 'accept_type': 'application/json', 'content_type': 'application/json', 'logger': <logging.Logger instance at 0x1ea74518>, 'conn': <httplib.HTTPSConnection instance at 0x206ef7e8>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 24, 'inputdata': {}}):
+	 host: cmsweb.cern.ch, basepath: /sitedb/data/prod/ (application/json)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_sitedbcache (duration 24 hours, max reuse 24.0 hours)
+2014-06-24 22:52:03,594 [DEBUG] 	Service initialised ({'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'content_type': 'application/json', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'basepath': '/sitedb/data/prod/', 'method': None, 'accept_type': 'application/json', 'timeout': 30, 'requests': {'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'cacheduration': 24, 'host': 'cmsweb.cern.ch', 'accept_type': 'application/json', 'content_type': 'application/json', 'logger': <logging.Logger instance at 0x1ea74518>, 'conn': <httplib.HTTPSConnection instance at 0x2090b3f8>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 24, 'inputdata': {}}):
+	 host: cmsweb.cern.ch, basepath: /sitedb/data/prod/ (application/json)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_sitedbcache (duration 24 hours, max reuse 24.0 hours)
+2014-06-24 22:52:04,066 [DEBUG] 	Submission DashBoard Pre-Submission report: {'ApplicationVersion': 'CMSSW_5_3_16', 'taskId': 'ztu_crab_0_140624_225102_2q7c4d', 'resubmitter': 'user', 'tool': 'crab', 'vo': 'cms', 'tool_ui': 'lxplus432.cern.ch', 'JSToolVersion': '2.10.5_patch1', 'user': 'ztu', 'scheduler': 'GLIDEIN', 'taskType': 'analysis', 'CMSUser': 'ztu', 'jobId': 'TaskMeta', 'datasetFull': '/QCD_Pt_80_TuneZ2_5p02TeV/HiWinter13-pp_STARTHI53_V25-v1/GEN-SIM-RECO', 'exe': 'cmsRun', 'GridName': '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ztu/CN=732466/CN=Zhoudunming Tu', 'SubmissionType': 'direct'}
+2014-06-24 22:52:04,066 [INFO] 	Checking available resources...
+2014-06-24 22:52:04,258 [INFO] 	Found  compatible site(s) for job 1
+2014-06-24 22:52:04,259 [INFO] 	1 blocks of jobs will be submitted
+2014-06-24 22:52:04,259 [DEBUG] 	Delegating proxy 
+2014-06-24 22:52:04,259 [DEBUG] 	Submitting jobs [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401]
+2014-06-24 22:52:04,772 [DEBUG] 	Calling ServerConfig default
+2014-06-24 22:52:04,773 [DEBUG] 	getting serverlist from web
+2014-06-24 22:52:04,773 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/afs/cern.ch/user/z/ztu/.cms_crab/AvailableServerList].
+2014-06-24 22:52:04,773 [DEBUG] 	Service initialised ({'endpoint': 'http://cmsdoc.cern.ch/cms/LCG/crab/config/', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_crab', 'basepath': '/cms/LCG/crab/config/', 'method': None, 'timeout': 20, 'requests': {'endpoint': 'http://cmsdoc.cern.ch/cms/LCG/crab/config/', 'timeout': 20, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_crab', 'cacheduration': 0.5, 'host': 'cmsdoc.cern.ch', 'accept_type': 'text/html', 'content_type': 'application/x-www-form-urlencoded', 'logger': <logging.Logger instance at 0x1ea74518>, 'type': 'txt/csv', 'conn': <httplib.HTTPConnection instance at 0x1ff3def0>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 0.5, 'type': 'txt/csv', 'inputdata': {}}):
+	 host: cmsdoc.cern.ch, basepath: /cms/LCG/crab/config/ (text/html)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_crab (duration 0.5 hours, max reuse 24.0 hours)
+2014-06-24 22:52:04,774 [DEBUG] 	/afs/cern.ch/user/z/ztu/.cms_crab/0_GET_AvailableServerList expired, refreshing cache
+2014-06-24 22:52:04,774 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/AvailableServerList
+	data: {}
+2014-06-24 22:52:04,781 [DEBUG] 	All avaialble servers: [['cern_vocms20', '2.8.4-', 'remoteGlidein'], ['cern_vocms83', '2.8.4-', 'remoteGlidein'], ['unl_hcc-crabserver', '2.8.4-', 'remoteGlidein'], ['ucsd_submit-4', '2.8.4-', 'remoteGlidein'], ['ucsd_submit-4', '2.8.4-', 'remoteGlidein'], ['ucsd_submit-4', '2.8.4-', 'remoteGlidein'], ['ucsd_submit-6', '2.8.4-', 'remoteGlidein'], ['ucsd_submit-6', '2.8.4-', 'remoteGlidein'], ['ucsd_submit-6', '2.8.4-', 'remoteGlidein']]
+2014-06-24 22:52:04,782 [DEBUG] 	All avaialble servers compatible with 2.10.5_patch1: ['cern_vocms20', 'cern_vocms83', 'unl_hcc-crabserver', 'ucsd_submit-4', 'ucsd_submit-4', 'ucsd_submit-4', 'ucsd_submit-6', 'ucsd_submit-6', 'ucsd_submit-6']
+2014-06-24 22:52:04,782 [DEBUG] 	Avaialble servers: ['cern_vocms20', 'cern_vocms83', 'unl_hcc-crabserver', 'ucsd_submit-4', 'ucsd_submit-4', 'ucsd_submit-4', 'ucsd_submit-6', 'ucsd_submit-6', 'ucsd_submit-6'] choosen: cern_vocms20
+2014-06-24 22:52:04,782 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/afs/cern.ch/user/z/ztu/.cms_crab/server_cern_vocms20.conf].
+2014-06-24 22:52:04,782 [DEBUG] 	Service initialised ({'endpoint': 'http://cmsdoc.cern.ch/cms/LCG/crab/config/', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_crab', 'basepath': '/cms/LCG/crab/config/', 'method': None, 'timeout': 20, 'requests': {'endpoint': 'http://cmsdoc.cern.ch/cms/LCG/crab/config/', 'timeout': 20, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_crab', 'cacheduration': 0.5, 'host': 'cmsdoc.cern.ch', 'accept_type': 'text/html', 'content_type': 'application/x-www-form-urlencoded', 'logger': <logging.Logger instance at 0x1ea74518>, 'type': 'txt/csv', 'conn': <httplib.HTTPConnection instance at 0x1ff3def0>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 0.5, 'type': 'txt/csv', 'inputdata': {}}):
+	 host: cmsdoc.cern.ch, basepath: /cms/LCG/crab/config/ (text/html)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_crab (duration 0.5 hours, max reuse 24.0 hours)
+2014-06-24 22:52:04,783 [DEBUG] 	/afs/cern.ch/user/z/ztu/.cms_crab/0_GET_server_cern_vocms20.conf expired, refreshing cache
+2014-06-24 22:52:04,783 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/server_cern_vocms20.conf
+	data: {}
+2014-06-24 22:52:04,803 [INFO] 	remotehost from Avail.List = vocms20.cern.ch
+2014-06-24 22:52:05,152 [DEBUG] 	Scram::Scram() version is 2
+2014-06-24 22:52:05,152 [DEBUG] 	Scram::Scram() arch is slc5_amd64_gcc462
+2014-06-24 22:52:05,182 [DEBUG] 	Service initialised ({'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'content_type': 'application/json', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'basepath': '/sitedb/data/prod/', 'method': None, 'accept_type': 'application/json', 'timeout': 30, 'requests': {'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'cacheduration': 24, 'host': 'cmsweb.cern.ch', 'accept_type': 'application/json', 'content_type': 'application/json', 'logger': <logging.Logger instance at 0x1ea74518>, 'conn': <httplib.HTTPSConnection instance at 0x2010da70>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 24, 'inputdata': {}}):
+	 host: cmsweb.cern.ch, basepath: /sitedb/data/prod/ (application/json)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_sitedbcache (duration 24 hours, max reuse 24.0 hours)
+2014-06-24 22:52:06,562 [INFO] 	contacting remote host vocms20.cern.ch
+2014-06-24 22:52:06,638 [DEBUG] 	Execute command :
+gsissh  -o ControlMaster=auto -o ControlPath=/tmp/ztu/.ssh/ssh-link-412689133-vocms20.cern.ch -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no vocms20.cern.ch  "sleep 3600"
+2014-06-24 22:52:06,674 [INFO] 	Establishing gsissh ControlPath. Wait 2 sec ...
+2014-06-24 22:52:08,674 [INFO] 	Establishing gsissh ControlPath. Wait 2 sec ...
+2014-06-24 22:52:10,674 [INFO] 	Establishing gsissh ControlPath. Wait 2 sec ...
+2014-06-24 22:52:12,702 [INFO] 	COPY FILES TO REMOTE HOST
+2014-06-24 22:52:12,702 [DEBUG] 	Execute command :
+gsissh -o ControlMaster=auto -o ControlPath=/tmp/ztu/.ssh/ssh-link-412689133-vocms20.cern.ch -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no vocms20.cern.ch  mkdir -p ztu_crab_0_140624_225102_2q7c4d
+2014-06-24 22:52:12,896 [DEBUG] 	Status,output= 0,
+2014-06-24 22:52:12,897 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/ztu/.ssh/ssh-link-412689133-vocms20.cern.ch -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /afs/cern.ch/user/z/ztu/scratch0/CMSSW_5_3_16/src/RecoHI/HiTracking/test/crab_0_140624_225102/share/default.tgz /afs/cern.ch/user/z/ztu/scratch0/CMSSW_5_3_16/src/RecoHI/HiTracking/test/crab_0_140624_225102/share/arguments.xml /afs/cern.ch/user/z/ztu/scratch0/CMSSW_5_3_16/src/RecoHI/HiTracking/test/crab_0_140624_225102/job/CMSSW.sh /afs/cern.ch/user/z/ztu/scratch0/CMSSW_5_3_16/src/RecoHI/HiTracking/test/crab_0_140624_225102/share//ztu_crab_0_140624_225102_2q7c4d_job401.jdl /tmp/x509up_u30140 vocms20.cern.ch:ztu_crab_0_140624_225102_2q7c4d
+2014-06-24 22:52:13,444 [DEBUG] 	Status,output= 0,
+2014-06-24 22:52:13,444 [INFO] 	SUBMIT TO REMOTE GLIDEIN FRONTEND
+2014-06-24 22:52:13,444 [DEBUG] 	Execute command :
+gsissh -o ControlMaster=auto -o ControlPath=/tmp/ztu/.ssh/ssh-link-412689133-vocms20.cern.ch -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no vocms20.cern.ch "cd ztu_crab_0_140624_225102_2q7c4d;  condor_submit  ztu_crab_0_140624_225102_2q7c4d_job401.jdl; echo 'CONDOR_SUBMIT-EXIT-STATUS IS' \$?"
+2014-06-24 22:52:23,338 [DEBUG] 	Status,output= 0,Submitting job(s).................................................................................................................................................................................................................................................................................................................................................................................................................
+401 job(s) submitted to cluster 1845463.
+CONDOR_SUBMIT-EXIT-STATUS IS 0
+2014-06-24 22:52:23,343 [DEBUG] 	Returning {u'ztu_crab_0_140624_225102_2q7c4d_job360': 'vocms20.cern.ch//140624//1845463.359', u'ztu_crab_0_140624_225102_2q7c4d_job369': 'vocms20.cern.ch//140624//1845463.368', u'ztu_crab_0_140624_225102_2q7c4d_job368': 'vocms20.cern.ch//140624//1845463.367', u'ztu_crab_0_140624_225102_2q7c4d_job196': 'vocms20.cern.ch//140624//1845463.195', u'ztu_crab_0_140624_225102_2q7c4d_job99': 'vocms20.cern.ch//140624//1845463.98', u'ztu_crab_0_140624_225102_2q7c4d_job93': 'vocms20.cern.ch//140624//1845463.92', u'ztu_crab_0_140624_225102_2q7c4d_job123': 'vocms20.cern.ch//140624//1845463.122', u'ztu_crab_0_140624_225102_2q7c4d_job181': 'vocms20.cern.ch//140624//1845463.180', u'ztu_crab_0_140624_225102_2q7c4d_job349': 'vocms20.cern.ch//140624//1845463.348', u'ztu_crab_0_140624_225102_2q7c4d_job348': 'vocms20.cern.ch//140624//1845463.347', u'ztu_crab_0_140624_225102_2q7c4d_job345': 'vocms20.cern.ch//140624//1845463.344', u'ztu_crab_0_140624_225102_2q7c4d_job344': 'vocms20.cern.ch//140624//1845463.343', u'ztu_crab_0_140624_225102_2q7c4d_job347': 'vocms20.cern.ch//140624//1845463.346', u'ztu_crab_0_140624_225102_2q7c4d_job346': 'vocms20.cern.ch//140624//1845463.345', u'ztu_crab_0_140624_225102_2q7c4d_job341': 'vocms20.cern.ch//140624//1845463.340', u'ztu_crab_0_140624_225102_2q7c4d_job340': 'vocms20.cern.ch//140624//1845463.339', u'ztu_crab_0_140624_225102_2q7c4d_job343': 'vocms20.cern.ch//140624//1845463.342', u'ztu_crab_0_140624_225102_2q7c4d_job342': 'vocms20.cern.ch//140624//1845463.341', u'ztu_crab_0_140624_225102_2q7c4d_job399': 'vocms20.cern.ch//140624//1845463.398', u'ztu_crab_0_140624_225102_2q7c4d_job180': 'vocms20.cern.ch//140624//1845463.179', u'ztu_crab_0_140624_225102_2q7c4d_job262': 'vocms20.cern.ch//140624//1845463.261', u'ztu_crab_0_140624_225102_2q7c4d_job263': 'vocms20.cern.ch//140624//1845463.262', u'ztu_crab_0_140624_225102_2q7c4d_job260': 'vocms20.cern.ch//140624//1845463.259', u'ztu_crab_0_140624_225102_2q7c4d_job261': 'vocms20.cern.ch//140624//1845463.260', u'ztu_crab_0_140624_225102_2q7c4d_job266': 'vocms20.cern.ch//140624//1845463.265', u'ztu_crab_0_140624_225102_2q7c4d_job267': 'vocms20.cern.ch//140624//1845463.266', u'ztu_crab_0_140624_225102_2q7c4d_job264': 'vocms20.cern.ch//140624//1845463.263', u'ztu_crab_0_140624_225102_2q7c4d_job265': 'vocms20.cern.ch//140624//1845463.264', u'ztu_crab_0_140624_225102_2q7c4d_job63': 'vocms20.cern.ch//140624//1845463.62', u'ztu_crab_0_140624_225102_2q7c4d_job62': 'vocms20.cern.ch//140624//1845463.61', u'ztu_crab_0_140624_225102_2q7c4d_job61': 'vocms20.cern.ch//140624//1845463.60', u'ztu_crab_0_140624_225102_2q7c4d_job269': 'vocms20.cern.ch//140624//1845463.268', u'ztu_crab_0_140624_225102_2q7c4d_job187': 'vocms20.cern.ch//140624//1845463.186', u'ztu_crab_0_140624_225102_2q7c4d_job66': 'vocms20.cern.ch//140624//1845463.65', u'ztu_crab_0_140624_225102_2q7c4d_job65': 'vocms20.cern.ch//140624//1845463.64', u'ztu_crab_0_140624_225102_2q7c4d_job64': 'vocms20.cern.ch//140624//1845463.63', u'ztu_crab_0_140624_225102_2q7c4d_job391': 'vocms20.cern.ch//140624//1845463.390', u'ztu_crab_0_140624_225102_2q7c4d_job397': 'vocms20.cern.ch//140624//1845463.396', u'ztu_crab_0_140624_225102_2q7c4d_job165': 'vocms20.cern.ch//140624//1845463.164', u'ztu_crab_0_140624_225102_2q7c4d_job164': 'vocms20.cern.ch//140624//1845463.163', u'ztu_crab_0_140624_225102_2q7c4d_job167': 'vocms20.cern.ch//140624//1845463.166', u'ztu_crab_0_140624_225102_2q7c4d_job166': 'vocms20.cern.ch//140624//1845463.165', u'ztu_crab_0_140624_225102_2q7c4d_job161': 'vocms20.cern.ch//140624//1845463.160', u'ztu_crab_0_140624_225102_2q7c4d_job160': 'vocms20.cern.ch//140624//1845463.159', u'ztu_crab_0_140624_225102_2q7c4d_job163': 'vocms20.cern.ch//140624//1845463.162', u'ztu_crab_0_140624_225102_2q7c4d_job162': 'vocms20.cern.ch//140624//1845463.161', u'ztu_crab_0_140624_225102_2q7c4d_job169': 'vocms20.cern.ch//140624//1845463.168', u'ztu_crab_0_140624_225102_2q7c4d_job168': 'vocms20.cern.ch//140624//1845463.167', u'ztu_crab_0_140624_225102_2q7c4d_job29': 'vocms20.cern.ch//140624//1845463.28', u'ztu_crab_0_140624_225102_2q7c4d_job28': 'vocms20.cern.ch//140624//1845463.27', u'ztu_crab_0_140624_225102_2q7c4d_job27': 'vocms20.cern.ch//140624//1845463.26', u'ztu_crab_0_140624_225102_2q7c4d_job26': 'vocms20.cern.ch//140624//1845463.25', u'ztu_crab_0_140624_225102_2q7c4d_job25': 'vocms20.cern.ch//140624//1845463.24', u'ztu_crab_0_140624_225102_2q7c4d_job24': 'vocms20.cern.ch//140624//1845463.23', u'ztu_crab_0_140624_225102_2q7c4d_job23': 'vocms20.cern.ch//140624//1845463.22', u'ztu_crab_0_140624_225102_2q7c4d_job22': 'vocms20.cern.ch//140624//1845463.21', u'ztu_crab_0_140624_225102_2q7c4d_job21': 'vocms20.cern.ch//140624//1845463.20', u'ztu_crab_0_140624_225102_2q7c4d_job20': 'vocms20.cern.ch//140624//1845463.19', u'ztu_crab_0_140624_225102_2q7c4d_job301': 'vocms20.cern.ch//140624//1845463.300', u'ztu_crab_0_140624_225102_2q7c4d_job300': 'vocms20.cern.ch//140624//1845463.299', u'ztu_crab_0_140624_225102_2q7c4d_job303': 'vocms20.cern.ch//140624//1845463.302', u'ztu_crab_0_140624_225102_2q7c4d_job302': 'vocms20.cern.ch//140624//1845463.301', u'ztu_crab_0_140624_225102_2q7c4d_job305': 'vocms20.cern.ch//140624//1845463.304', u'ztu_crab_0_140624_225102_2q7c4d_job304': 'vocms20.cern.ch//140624//1845463.303', u'ztu_crab_0_140624_225102_2q7c4d_job307': 'vocms20.cern.ch//140624//1845463.306', u'ztu_crab_0_140624_225102_2q7c4d_job306': 'vocms20.cern.ch//140624//1845463.305', u'ztu_crab_0_140624_225102_2q7c4d_job309': 'vocms20.cern.ch//140624//1845463.308', u'ztu_crab_0_140624_225102_2q7c4d_job308': 'vocms20.cern.ch//140624//1845463.307', u'ztu_crab_0_140624_225102_2q7c4d_job239': 'vocms20.cern.ch//140624//1845463.238', u'ztu_crab_0_140624_225102_2q7c4d_job238': 'vocms20.cern.ch//140624//1845463.237', u'ztu_crab_0_140624_225102_2q7c4d_job235': 'vocms20.cern.ch//140624//1845463.234', u'ztu_crab_0_140624_225102_2q7c4d_job234': 'vocms20.cern.ch//140624//1845463.233', u'ztu_crab_0_140624_225102_2q7c4d_job237': 'vocms20.cern.ch//140624//1845463.236', u'ztu_crab_0_140624_225102_2q7c4d_job236': 'vocms20.cern.ch//140624//1845463.235', u'ztu_crab_0_140624_225102_2q7c4d_job231': 'vocms20.cern.ch//140624//1845463.230', u'ztu_crab_0_140624_225102_2q7c4d_job230': 'vocms20.cern.ch//140624//1845463.229', u'ztu_crab_0_140624_225102_2q7c4d_job233': 'vocms20.cern.ch//140624//1845463.232', u'ztu_crab_0_140624_225102_2q7c4d_job232': 'vocms20.cern.ch//140624//1845463.231', u'ztu_crab_0_140624_225102_2q7c4d_job8': 'vocms20.cern.ch//140624//1845463.7', u'ztu_crab_0_140624_225102_2q7c4d_job9': 'vocms20.cern.ch//140624//1845463.8', u'ztu_crab_0_140624_225102_2q7c4d_job282': 'vocms20.cern.ch//140624//1845463.281', u'ztu_crab_0_140624_225102_2q7c4d_job283': 'vocms20.cern.ch//140624//1845463.282', u'ztu_crab_0_140624_225102_2q7c4d_job284': 'vocms20.cern.ch//140624//1845463.283', u'ztu_crab_0_140624_225102_2q7c4d_job285': 'vocms20.cern.ch//140624//1845463.284', u'ztu_crab_0_140624_225102_2q7c4d_job286': 'vocms20.cern.ch//140624//1845463.285', u'ztu_crab_0_140624_225102_2q7c4d_job287': 'vocms20.cern.ch//140624//1845463.286', u'ztu_crab_0_140624_225102_2q7c4d_job121': 'vocms20.cern.ch//140624//1845463.120', u'ztu_crab_0_140624_225102_2q7c4d_job1': 'vocms20.cern.ch//140624//1845463.0', u'ztu_crab_0_140624_225102_2q7c4d_job2': 'vocms20.cern.ch//140624//1845463.1', u'ztu_crab_0_140624_225102_2q7c4d_job3': 'vocms20.cern.ch//140624//1845463.2', u'ztu_crab_0_140624_225102_2q7c4d_job4': 'vocms20.cern.ch//140624//1845463.3', u'ztu_crab_0_140624_225102_2q7c4d_job5': 'vocms20.cern.ch//140624//1845463.4', u'ztu_crab_0_140624_225102_2q7c4d_job6': 'vocms20.cern.ch//140624//1845463.5', u'ztu_crab_0_140624_225102_2q7c4d_job7': 'vocms20.cern.ch//140624//1845463.6', u'ztu_crab_0_140624_225102_2q7c4d_job194': 'vocms20.cern.ch//140624//1845463.193', u'ztu_crab_0_140624_225102_2q7c4d_job378': 'vocms20.cern.ch//140624//1845463.377', u'ztu_crab_0_140624_225102_2q7c4d_job379': 'vocms20.cern.ch//140624//1845463.378', u'ztu_crab_0_140624_225102_2q7c4d_job370': 'vocms20.cern.ch//140624//1845463.369', u'ztu_crab_0_140624_225102_2q7c4d_job371': 'vocms20.cern.ch//140624//1845463.370', u'ztu_crab_0_140624_225102_2q7c4d_job372': 'vocms20.cern.ch//140624//1845463.371', u'ztu_crab_0_140624_225102_2q7c4d_job373': 'vocms20.cern.ch//140624//1845463.372', u'ztu_crab_0_140624_225102_2q7c4d_job374': 'vocms20.cern.ch//140624//1845463.373', u'ztu_crab_0_140624_225102_2q7c4d_job375': 'vocms20.cern.ch//140624//1845463.374', u'ztu_crab_0_140624_225102_2q7c4d_job376': 'vocms20.cern.ch//140624//1845463.375', u'ztu_crab_0_140624_225102_2q7c4d_job377': 'vocms20.cern.ch//140624//1845463.376', u'ztu_crab_0_140624_225102_2q7c4d_job74': 'vocms20.cern.ch//140624//1845463.73', u'ztu_crab_0_140624_225102_2q7c4d_job75': 'vocms20.cern.ch//140624//1845463.74', u'ztu_crab_0_140624_225102_2q7c4d_job76': 'vocms20.cern.ch//140624//1845463.75', u'ztu_crab_0_140624_225102_2q7c4d_job77': 'vocms20.cern.ch//140624//1845463.76', u'ztu_crab_0_140624_225102_2q7c4d_job70': 'vocms20.cern.ch//140624//1845463.69', u'ztu_crab_0_140624_225102_2q7c4d_job71': 'vocms20.cern.ch//140624//1845463.70', u'ztu_crab_0_140624_225102_2q7c4d_job72': 'vocms20.cern.ch//140624//1845463.71', u'ztu_crab_0_140624_225102_2q7c4d_job73': 'vocms20.cern.ch//140624//1845463.72', u'ztu_crab_0_140624_225102_2q7c4d_job78': 'vocms20.cern.ch//140624//1845463.77', u'ztu_crab_0_140624_225102_2q7c4d_job79': 'vocms20.cern.ch//140624//1845463.78', u'ztu_crab_0_140624_225102_2q7c4d_job271': 'vocms20.cern.ch//140624//1845463.270', u'ztu_crab_0_140624_225102_2q7c4d_job270': 'vocms20.cern.ch//140624//1845463.269', u'ztu_crab_0_140624_225102_2q7c4d_job273': 'vocms20.cern.ch//140624//1845463.272', u'ztu_crab_0_140624_225102_2q7c4d_job272': 'vocms20.cern.ch//140624//1845463.271', u'ztu_crab_0_140624_225102_2q7c4d_job275': 'vocms20.cern.ch//140624//1845463.274', u'ztu_crab_0_140624_225102_2q7c4d_job274': 'vocms20.cern.ch//140624//1845463.273', u'ztu_crab_0_140624_225102_2q7c4d_job277': 'vocms20.cern.ch//140624//1845463.276', u'ztu_crab_0_140624_225102_2q7c4d_job276': 'vocms20.cern.ch//140624//1845463.275', u'ztu_crab_0_140624_225102_2q7c4d_job279': 'vocms20.cern.ch//140624//1845463.278', u'ztu_crab_0_140624_225102_2q7c4d_job278': 'vocms20.cern.ch//140624//1845463.277', u'ztu_crab_0_140624_225102_2q7c4d_job89': 'vocms20.cern.ch//140624//1845463.88', u'ztu_crab_0_140624_225102_2q7c4d_job88': 'vocms20.cern.ch//140624//1845463.87', u'ztu_crab_0_140624_225102_2q7c4d_job81': 'vocms20.cern.ch//140624//1845463.80', u'ztu_crab_0_140624_225102_2q7c4d_job80': 'vocms20.cern.ch//140624//1845463.79', u'ztu_crab_0_140624_225102_2q7c4d_job83': 'vocms20.cern.ch//140624//1845463.82', u'ztu_crab_0_140624_225102_2q7c4d_job82': 'vocms20.cern.ch//140624//1845463.81', u'ztu_crab_0_140624_225102_2q7c4d_job85': 'vocms20.cern.ch//140624//1845463.84', u'ztu_crab_0_140624_225102_2q7c4d_job84': 'vocms20.cern.ch//140624//1845463.83', u'ztu_crab_0_140624_225102_2q7c4d_job87': 'vocms20.cern.ch//140624//1845463.86', u'ztu_crab_0_140624_225102_2q7c4d_job86': 'vocms20.cern.ch//140624//1845463.85', u'ztu_crab_0_140624_225102_2q7c4d_job128': 'vocms20.cern.ch//140624//1845463.127', u'ztu_crab_0_140624_225102_2q7c4d_job190': 'vocms20.cern.ch//140624//1845463.189', u'ztu_crab_0_140624_225102_2q7c4d_job363': 'vocms20.cern.ch//140624//1845463.362', u'ztu_crab_0_140624_225102_2q7c4d_job191': 'vocms20.cern.ch//140624//1845463.190', u'ztu_crab_0_140624_225102_2q7c4d_job150': 'vocms20.cern.ch//140624//1845463.149', u'ztu_crab_0_140624_225102_2q7c4d_job151': 'vocms20.cern.ch//140624//1845463.150', u'ztu_crab_0_140624_225102_2q7c4d_job152': 'vocms20.cern.ch//140624//1845463.151', u'ztu_crab_0_140624_225102_2q7c4d_job153': 'vocms20.cern.ch//140624//1845463.152', u'ztu_crab_0_140624_225102_2q7c4d_job154': 'vocms20.cern.ch//140624//1845463.153', u'ztu_crab_0_140624_225102_2q7c4d_job155': 'vocms20.cern.ch//140624//1845463.154', u'ztu_crab_0_140624_225102_2q7c4d_job156': 'vocms20.cern.ch//140624//1845463.155', u'ztu_crab_0_140624_225102_2q7c4d_job157': 'vocms20.cern.ch//140624//1845463.156', u'ztu_crab_0_140624_225102_2q7c4d_job158': 'vocms20.cern.ch//140624//1845463.157', u'ztu_crab_0_140624_225102_2q7c4d_job159': 'vocms20.cern.ch//140624//1845463.158', u'ztu_crab_0_140624_225102_2q7c4d_job192': 'vocms20.cern.ch//140624//1845463.191', u'ztu_crab_0_140624_225102_2q7c4d_job401': 'vocms20.cern.ch//140624//1845463.400', u'ztu_crab_0_140624_225102_2q7c4d_job193': 'vocms20.cern.ch//140624//1845463.192', u'ztu_crab_0_140624_225102_2q7c4d_job129': 'vocms20.cern.ch//140624//1845463.128', u'ztu_crab_0_140624_225102_2q7c4d_job38': 'vocms20.cern.ch//140624//1845463.37', u'ztu_crab_0_140624_225102_2q7c4d_job39': 'vocms20.cern.ch//140624//1845463.38', u'ztu_crab_0_140624_225102_2q7c4d_job30': 'vocms20.cern.ch//140624//1845463.29', u'ztu_crab_0_140624_225102_2q7c4d_job31': 'vocms20.cern.ch//140624//1845463.30', u'ztu_crab_0_140624_225102_2q7c4d_job32': 'vocms20.cern.ch//140624//1845463.31', u'ztu_crab_0_140624_225102_2q7c4d_job33': 'vocms20.cern.ch//140624//1845463.32', u'ztu_crab_0_140624_225102_2q7c4d_job34': 'vocms20.cern.ch//140624//1845463.33', u'ztu_crab_0_140624_225102_2q7c4d_job35': 'vocms20.cern.ch//140624//1845463.34', u'ztu_crab_0_140624_225102_2q7c4d_job36': 'vocms20.cern.ch//140624//1845463.35', u'ztu_crab_0_140624_225102_2q7c4d_job37': 'vocms20.cern.ch//140624//1845463.36', u'ztu_crab_0_140624_225102_2q7c4d_job338': 'vocms20.cern.ch//140624//1845463.337', u'ztu_crab_0_140624_225102_2q7c4d_job339': 'vocms20.cern.ch//140624//1845463.338', u'ztu_crab_0_140624_225102_2q7c4d_job334': 'vocms20.cern.ch//140624//1845463.333', u'ztu_crab_0_140624_225102_2q7c4d_job335': 'vocms20.cern.ch//140624//1845463.334', u'ztu_crab_0_140624_225102_2q7c4d_job336': 'vocms20.cern.ch//140624//1845463.335', u'ztu_crab_0_140624_225102_2q7c4d_job337': 'vocms20.cern.ch//140624//1845463.336', u'ztu_crab_0_140624_225102_2q7c4d_job330': 'vocms20.cern.ch//140624//1845463.329', u'ztu_crab_0_140624_225102_2q7c4d_job331': 'vocms20.cern.ch//140624//1845463.330', u'ztu_crab_0_140624_225102_2q7c4d_job332': 'vocms20.cern.ch//140624//1845463.331', u'ztu_crab_0_140624_225102_2q7c4d_job333': 'vocms20.cern.ch//140624//1845463.332', u'ztu_crab_0_140624_225102_2q7c4d_job208': 'vocms20.cern.ch//140624//1845463.207', u'ztu_crab_0_140624_225102_2q7c4d_job209': 'vocms20.cern.ch//140624//1845463.208', u'ztu_crab_0_140624_225102_2q7c4d_job362': 'vocms20.cern.ch//140624//1845463.361', u'ztu_crab_0_140624_225102_2q7c4d_job200': 'vocms20.cern.ch//140624//1845463.199', u'ztu_crab_0_140624_225102_2q7c4d_job201': 'vocms20.cern.ch//140624//1845463.200', u'ztu_crab_0_140624_225102_2q7c4d_job202': 'vocms20.cern.ch//140624//1845463.201', u'ztu_crab_0_140624_225102_2q7c4d_job203': 'vocms20.cern.ch//140624//1845463.202', u'ztu_crab_0_140624_225102_2q7c4d_job204': 'vocms20.cern.ch//140624//1845463.203', u'ztu_crab_0_140624_225102_2q7c4d_job205': 'vocms20.cern.ch//140624//1845463.204', u'ztu_crab_0_140624_225102_2q7c4d_job206': 'vocms20.cern.ch//140624//1845463.205', u'ztu_crab_0_140624_225102_2q7c4d_job207': 'vocms20.cern.ch//140624//1845463.206', u'ztu_crab_0_140624_225102_2q7c4d_job49': 'vocms20.cern.ch//140624//1845463.48', u'ztu_crab_0_140624_225102_2q7c4d_job48': 'vocms20.cern.ch//140624//1845463.47', u'ztu_crab_0_140624_225102_2q7c4d_job45': 'vocms20.cern.ch//140624//1845463.44', u'ztu_crab_0_140624_225102_2q7c4d_job44': 'vocms20.cern.ch//140624//1845463.43', u'ztu_crab_0_140624_225102_2q7c4d_job47': 'vocms20.cern.ch//140624//1845463.46', u'ztu_crab_0_140624_225102_2q7c4d_job46': 'vocms20.cern.ch//140624//1845463.45', u'ztu_crab_0_140624_225102_2q7c4d_job41': 'vocms20.cern.ch//140624//1845463.40', u'ztu_crab_0_140624_225102_2q7c4d_job40': 'vocms20.cern.ch//140624//1845463.39', u'ztu_crab_0_140624_225102_2q7c4d_job43': 'vocms20.cern.ch//140624//1845463.42', u'ztu_crab_0_140624_225102_2q7c4d_job42': 'vocms20.cern.ch//140624//1845463.41', u'ztu_crab_0_140624_225102_2q7c4d_job114': 'vocms20.cern.ch//140624//1845463.113', u'ztu_crab_0_140624_225102_2q7c4d_job115': 'vocms20.cern.ch//140624//1845463.114', u'ztu_crab_0_140624_225102_2q7c4d_job116': 'vocms20.cern.ch//140624//1845463.115', u'ztu_crab_0_140624_225102_2q7c4d_job117': 'vocms20.cern.ch//140624//1845463.116', u'ztu_crab_0_140624_225102_2q7c4d_job110': 'vocms20.cern.ch//140624//1845463.109', u'ztu_crab_0_140624_225102_2q7c4d_job111': 'vocms20.cern.ch//140624//1845463.110', u'ztu_crab_0_140624_225102_2q7c4d_job112': 'vocms20.cern.ch//140624//1845463.111', u'ztu_crab_0_140624_225102_2q7c4d_job113': 'vocms20.cern.ch//140624//1845463.112', u'ztu_crab_0_140624_225102_2q7c4d_job118': 'vocms20.cern.ch//140624//1845463.117', u'ztu_crab_0_140624_225102_2q7c4d_job119': 'vocms20.cern.ch//140624//1845463.118', u'ztu_crab_0_140624_225102_2q7c4d_job299': 'vocms20.cern.ch//140624//1845463.298', u'ztu_crab_0_140624_225102_2q7c4d_job298': 'vocms20.cern.ch//140624//1845463.297', u'ztu_crab_0_140624_225102_2q7c4d_job297': 'vocms20.cern.ch//140624//1845463.296', u'ztu_crab_0_140624_225102_2q7c4d_job296': 'vocms20.cern.ch//140624//1845463.295', u'ztu_crab_0_140624_225102_2q7c4d_job295': 'vocms20.cern.ch//140624//1845463.294', u'ztu_crab_0_140624_225102_2q7c4d_job294': 'vocms20.cern.ch//140624//1845463.293', u'ztu_crab_0_140624_225102_2q7c4d_job293': 'vocms20.cern.ch//140624//1845463.292', u'ztu_crab_0_140624_225102_2q7c4d_job292': 'vocms20.cern.ch//140624//1845463.291', u'ztu_crab_0_140624_225102_2q7c4d_job291': 'vocms20.cern.ch//140624//1845463.290', u'ztu_crab_0_140624_225102_2q7c4d_job290': 'vocms20.cern.ch//140624//1845463.289', u'ztu_crab_0_140624_225102_2q7c4d_job69': 'vocms20.cern.ch//140624//1845463.68', u'ztu_crab_0_140624_225102_2q7c4d_job68': 'vocms20.cern.ch//140624//1845463.67', u'ztu_crab_0_140624_225102_2q7c4d_job400': 'vocms20.cern.ch//140624//1845463.399', u'ztu_crab_0_140624_225102_2q7c4d_job183': 'vocms20.cern.ch//140624//1845463.182', u'ztu_crab_0_140624_225102_2q7c4d_job182': 'vocms20.cern.ch//140624//1845463.181', u'ztu_crab_0_140624_225102_2q7c4d_job268': 'vocms20.cern.ch//140624//1845463.267', u'ztu_crab_0_140624_225102_2q7c4d_job17': 'vocms20.cern.ch//140624//1845463.16', u'ztu_crab_0_140624_225102_2q7c4d_job280': 'vocms20.cern.ch//140624//1845463.279', u'ztu_crab_0_140624_225102_2q7c4d_job60': 'vocms20.cern.ch//140624//1845463.59', u'ztu_crab_0_140624_225102_2q7c4d_job281': 'vocms20.cern.ch//140624//1845463.280', u'ztu_crab_0_140624_225102_2q7c4d_job67': 'vocms20.cern.ch//140624//1845463.66', u'ztu_crab_0_140624_225102_2q7c4d_job186': 'vocms20.cern.ch//140624//1845463.185', u'ztu_crab_0_140624_225102_2q7c4d_job185': 'vocms20.cern.ch//140624//1845463.184', u'ztu_crab_0_140624_225102_2q7c4d_job184': 'vocms20.cern.ch//140624//1845463.183', u'ztu_crab_0_140624_225102_2q7c4d_job19': 'vocms20.cern.ch//140624//1845463.18', u'ztu_crab_0_140624_225102_2q7c4d_job367': 'vocms20.cern.ch//140624//1845463.366', u'ztu_crab_0_140624_225102_2q7c4d_job288': 'vocms20.cern.ch//140624//1845463.287', u'ztu_crab_0_140624_225102_2q7c4d_job365': 'vocms20.cern.ch//140624//1845463.364', u'ztu_crab_0_140624_225102_2q7c4d_job364': 'vocms20.cern.ch//140624//1845463.363', u'ztu_crab_0_140624_225102_2q7c4d_job248': 'vocms20.cern.ch//140624//1845463.247', u'ztu_crab_0_140624_225102_2q7c4d_job249': 'vocms20.cern.ch//140624//1845463.248', u'ztu_crab_0_140624_225102_2q7c4d_job361': 'vocms20.cern.ch//140624//1845463.360', u'ztu_crab_0_140624_225102_2q7c4d_job120': 'vocms20.cern.ch//140624//1845463.119', u'ztu_crab_0_140624_225102_2q7c4d_job244': 'vocms20.cern.ch//140624//1845463.243', u'ztu_crab_0_140624_225102_2q7c4d_job245': 'vocms20.cern.ch//140624//1845463.244', u'ztu_crab_0_140624_225102_2q7c4d_job246': 'vocms20.cern.ch//140624//1845463.245', u'ztu_crab_0_140624_225102_2q7c4d_job247': 'vocms20.cern.ch//140624//1845463.246', u'ztu_crab_0_140624_225102_2q7c4d_job240': 'vocms20.cern.ch//140624//1845463.239', u'ztu_crab_0_140624_225102_2q7c4d_job241': 'vocms20.cern.ch//140624//1845463.240', u'ztu_crab_0_140624_225102_2q7c4d_job242': 'vocms20.cern.ch//140624//1845463.241', u'ztu_crab_0_140624_225102_2q7c4d_job243': 'vocms20.cern.ch//140624//1845463.242', u'ztu_crab_0_140624_225102_2q7c4d_job98': 'vocms20.cern.ch//140624//1845463.97', u'ztu_crab_0_140624_225102_2q7c4d_job122': 'vocms20.cern.ch//140624//1845463.121', u'ztu_crab_0_140624_225102_2q7c4d_job92': 'vocms20.cern.ch//140624//1845463.91', u'ztu_crab_0_140624_225102_2q7c4d_job125': 'vocms20.cern.ch//140624//1845463.124', u'ztu_crab_0_140624_225102_2q7c4d_job90': 'vocms20.cern.ch//140624//1845463.89', u'ztu_crab_0_140624_225102_2q7c4d_job91': 'vocms20.cern.ch//140624//1845463.90', u'ztu_crab_0_140624_225102_2q7c4d_job96': 'vocms20.cern.ch//140624//1845463.95', u'ztu_crab_0_140624_225102_2q7c4d_job97': 'vocms20.cern.ch//140624//1845463.96', u'ztu_crab_0_140624_225102_2q7c4d_job94': 'vocms20.cern.ch//140624//1845463.93', u'ztu_crab_0_140624_225102_2q7c4d_job95': 'vocms20.cern.ch//140624//1845463.94', u'ztu_crab_0_140624_225102_2q7c4d_job398': 'vocms20.cern.ch//140624//1845463.397', u'ztu_crab_0_140624_225102_2q7c4d_job258': 'vocms20.cern.ch//140624//1845463.257', u'ztu_crab_0_140624_225102_2q7c4d_job127': 'vocms20.cern.ch//140624//1845463.126', u'ztu_crab_0_140624_225102_2q7c4d_job392': 'vocms20.cern.ch//140624//1845463.391', u'ztu_crab_0_140624_225102_2q7c4d_job393': 'vocms20.cern.ch//140624//1845463.392', u'ztu_crab_0_140624_225102_2q7c4d_job390': 'vocms20.cern.ch//140624//1845463.389', u'ztu_crab_0_140624_225102_2q7c4d_job126': 'vocms20.cern.ch//140624//1845463.125', u'ztu_crab_0_140624_225102_2q7c4d_job396': 'vocms20.cern.ch//140624//1845463.395', u'ztu_crab_0_140624_225102_2q7c4d_job124': 'vocms20.cern.ch//140624//1845463.123', u'ztu_crab_0_140624_225102_2q7c4d_job394': 'vocms20.cern.ch//140624//1845463.393', u'ztu_crab_0_140624_225102_2q7c4d_job395': 'vocms20.cern.ch//140624//1845463.394', u'ztu_crab_0_140624_225102_2q7c4d_job289': 'vocms20.cern.ch//140624//1845463.288', u'ztu_crab_0_140624_225102_2q7c4d_job315': 'vocms20.cern.ch//140624//1845463.314', u'ztu_crab_0_140624_225102_2q7c4d_job251': 'vocms20.cern.ch//140624//1845463.250', u'ztu_crab_0_140624_225102_2q7c4d_job250': 'vocms20.cern.ch//140624//1845463.249', u'ztu_crab_0_140624_225102_2q7c4d_job149': 'vocms20.cern.ch//140624//1845463.148', u'ztu_crab_0_140624_225102_2q7c4d_job148': 'vocms20.cern.ch//140624//1845463.147', u'ztu_crab_0_140624_225102_2q7c4d_job147': 'vocms20.cern.ch//140624//1845463.146', u'ztu_crab_0_140624_225102_2q7c4d_job146': 'vocms20.cern.ch//140624//1845463.145', u'ztu_crab_0_140624_225102_2q7c4d_job145': 'vocms20.cern.ch//140624//1845463.144', u'ztu_crab_0_140624_225102_2q7c4d_job144': 'vocms20.cern.ch//140624//1845463.143', u'ztu_crab_0_140624_225102_2q7c4d_job143': 'vocms20.cern.ch//140624//1845463.142', u'ztu_crab_0_140624_225102_2q7c4d_job142': 'vocms20.cern.ch//140624//1845463.141', u'ztu_crab_0_140624_225102_2q7c4d_job141': 'vocms20.cern.ch//140624//1845463.140', u'ztu_crab_0_140624_225102_2q7c4d_job140': 'vocms20.cern.ch//140624//1845463.139', u'ztu_crab_0_140624_225102_2q7c4d_job226': 'vocms20.cern.ch//140624//1845463.225', u'ztu_crab_0_140624_225102_2q7c4d_job259': 'vocms20.cern.ch//140624//1845463.258', u'ztu_crab_0_140624_225102_2q7c4d_job329': 'vocms20.cern.ch//140624//1845463.328', u'ztu_crab_0_140624_225102_2q7c4d_job328': 'vocms20.cern.ch//140624//1845463.327', u'ztu_crab_0_140624_225102_2q7c4d_job323': 'vocms20.cern.ch//140624//1845463.322', u'ztu_crab_0_140624_225102_2q7c4d_job322': 'vocms20.cern.ch//140624//1845463.321', u'ztu_crab_0_140624_225102_2q7c4d_job321': 'vocms20.cern.ch//140624//1845463.320', u'ztu_crab_0_140624_225102_2q7c4d_job320': 'vocms20.cern.ch//140624//1845463.319', u'ztu_crab_0_140624_225102_2q7c4d_job327': 'vocms20.cern.ch//140624//1845463.326', u'ztu_crab_0_140624_225102_2q7c4d_job326': 'vocms20.cern.ch//140624//1845463.325', u'ztu_crab_0_140624_225102_2q7c4d_job325': 'vocms20.cern.ch//140624//1845463.324', u'ztu_crab_0_140624_225102_2q7c4d_job324': 'vocms20.cern.ch//140624//1845463.323', u'ztu_crab_0_140624_225102_2q7c4d_job382': 'vocms20.cern.ch//140624//1845463.381', u'ztu_crab_0_140624_225102_2q7c4d_job358': 'vocms20.cern.ch//140624//1845463.357', u'ztu_crab_0_140624_225102_2q7c4d_job359': 'vocms20.cern.ch//140624//1845463.358', u'ztu_crab_0_140624_225102_2q7c4d_job356': 'vocms20.cern.ch//140624//1845463.355', u'ztu_crab_0_140624_225102_2q7c4d_job357': 'vocms20.cern.ch//140624//1845463.356', u'ztu_crab_0_140624_225102_2q7c4d_job354': 'vocms20.cern.ch//140624//1845463.353', u'ztu_crab_0_140624_225102_2q7c4d_job355': 'vocms20.cern.ch//140624//1845463.354', u'ztu_crab_0_140624_225102_2q7c4d_job352': 'vocms20.cern.ch//140624//1845463.351', u'ztu_crab_0_140624_225102_2q7c4d_job353': 'vocms20.cern.ch//140624//1845463.352', u'ztu_crab_0_140624_225102_2q7c4d_job350': 'vocms20.cern.ch//140624//1845463.349', u'ztu_crab_0_140624_225102_2q7c4d_job351': 'vocms20.cern.ch//140624//1845463.350', u'ztu_crab_0_140624_225102_2q7c4d_job217': 'vocms20.cern.ch//140624//1845463.216', u'ztu_crab_0_140624_225102_2q7c4d_job216': 'vocms20.cern.ch//140624//1845463.215', u'ztu_crab_0_140624_225102_2q7c4d_job215': 'vocms20.cern.ch//140624//1845463.214', u'ztu_crab_0_140624_225102_2q7c4d_job214': 'vocms20.cern.ch//140624//1845463.213', u'ztu_crab_0_140624_225102_2q7c4d_job213': 'vocms20.cern.ch//140624//1845463.212', u'ztu_crab_0_140624_225102_2q7c4d_job199': 'vocms20.cern.ch//140624//1845463.198', u'ztu_crab_0_140624_225102_2q7c4d_job58': 'vocms20.cern.ch//140624//1845463.57', u'ztu_crab_0_140624_225102_2q7c4d_job210': 'vocms20.cern.ch//140624//1845463.209', u'ztu_crab_0_140624_225102_2q7c4d_job56': 'vocms20.cern.ch//140624//1845463.55', u'ztu_crab_0_140624_225102_2q7c4d_job57': 'vocms20.cern.ch//140624//1845463.56', u'ztu_crab_0_140624_225102_2q7c4d_job54': 'vocms20.cern.ch//140624//1845463.53', u'ztu_crab_0_140624_225102_2q7c4d_job55': 'vocms20.cern.ch//140624//1845463.54', u'ztu_crab_0_140624_225102_2q7c4d_job52': 'vocms20.cern.ch//140624//1845463.51', u'ztu_crab_0_140624_225102_2q7c4d_job53': 'vocms20.cern.ch//140624//1845463.52', u'ztu_crab_0_140624_225102_2q7c4d_job219': 'vocms20.cern.ch//140624//1845463.218', u'ztu_crab_0_140624_225102_2q7c4d_job218': 'vocms20.cern.ch//140624//1845463.217', u'ztu_crab_0_140624_225102_2q7c4d_job103': 'vocms20.cern.ch//140624//1845463.102', u'ztu_crab_0_140624_225102_2q7c4d_job102': 'vocms20.cern.ch//140624//1845463.101', u'ztu_crab_0_140624_225102_2q7c4d_job101': 'vocms20.cern.ch//140624//1845463.100', u'ztu_crab_0_140624_225102_2q7c4d_job100': 'vocms20.cern.ch//140624//1845463.99', u'ztu_crab_0_140624_225102_2q7c4d_job107': 'vocms20.cern.ch//140624//1845463.106', u'ztu_crab_0_140624_225102_2q7c4d_job106': 'vocms20.cern.ch//140624//1845463.105', u'ztu_crab_0_140624_225102_2q7c4d_job105': 'vocms20.cern.ch//140624//1845463.104', u'ztu_crab_0_140624_225102_2q7c4d_job104': 'vocms20.cern.ch//140624//1845463.103', u'ztu_crab_0_140624_225102_2q7c4d_job109': 'vocms20.cern.ch//140624//1845463.108', u'ztu_crab_0_140624_225102_2q7c4d_job108': 'vocms20.cern.ch//140624//1845463.107', u'ztu_crab_0_140624_225102_2q7c4d_job176': 'vocms20.cern.ch//140624//1845463.175', u'ztu_crab_0_140624_225102_2q7c4d_job177': 'vocms20.cern.ch//140624//1845463.176', u'ztu_crab_0_140624_225102_2q7c4d_job174': 'vocms20.cern.ch//140624//1845463.173', u'ztu_crab_0_140624_225102_2q7c4d_job175': 'vocms20.cern.ch//140624//1845463.174', u'ztu_crab_0_140624_225102_2q7c4d_job172': 'vocms20.cern.ch//140624//1845463.171', u'ztu_crab_0_140624_225102_2q7c4d_job173': 'vocms20.cern.ch//140624//1845463.172', u'ztu_crab_0_140624_225102_2q7c4d_job170': 'vocms20.cern.ch//140624//1845463.169', u'ztu_crab_0_140624_225102_2q7c4d_job171': 'vocms20.cern.ch//140624//1845463.170', u'ztu_crab_0_140624_225102_2q7c4d_job178': 'vocms20.cern.ch//140624//1845463.177', u'ztu_crab_0_140624_225102_2q7c4d_job179': 'vocms20.cern.ch//140624//1845463.178', u'ztu_crab_0_140624_225102_2q7c4d_job198': 'vocms20.cern.ch//140624//1845463.197', u'ztu_crab_0_140624_225102_2q7c4d_job212': 'vocms20.cern.ch//140624//1845463.211', u'ztu_crab_0_140624_225102_2q7c4d_job12': 'vocms20.cern.ch//140624//1845463.11', u'ztu_crab_0_140624_225102_2q7c4d_job13': 'vocms20.cern.ch//140624//1845463.12', u'ztu_crab_0_140624_225102_2q7c4d_job10': 'vocms20.cern.ch//140624//1845463.9', u'ztu_crab_0_140624_225102_2q7c4d_job11': 'vocms20.cern.ch//140624//1845463.10', u'ztu_crab_0_140624_225102_2q7c4d_job16': 'vocms20.cern.ch//140624//1845463.15', u'ztu_crab_0_140624_225102_2q7c4d_job211': 'vocms20.cern.ch//140624//1845463.210', u'ztu_crab_0_140624_225102_2q7c4d_job14': 'vocms20.cern.ch//140624//1845463.13', u'ztu_crab_0_140624_225102_2q7c4d_job15': 'vocms20.cern.ch//140624//1845463.14', u'ztu_crab_0_140624_225102_2q7c4d_job18': 'vocms20.cern.ch//140624//1845463.17', u'ztu_crab_0_140624_225102_2q7c4d_job59': 'vocms20.cern.ch//140624//1845463.58', u'ztu_crab_0_140624_225102_2q7c4d_job312': 'vocms20.cern.ch//140624//1845463.311', u'ztu_crab_0_140624_225102_2q7c4d_job313': 'vocms20.cern.ch//140624//1845463.312', u'ztu_crab_0_140624_225102_2q7c4d_job310': 'vocms20.cern.ch//140624//1845463.309', u'ztu_crab_0_140624_225102_2q7c4d_job311': 'vocms20.cern.ch//140624//1845463.310', u'ztu_crab_0_140624_225102_2q7c4d_job316': 'vocms20.cern.ch//140624//1845463.315', u'ztu_crab_0_140624_225102_2q7c4d_job317': 'vocms20.cern.ch//140624//1845463.316', u'ztu_crab_0_140624_225102_2q7c4d_job314': 'vocms20.cern.ch//140624//1845463.313', u'ztu_crab_0_140624_225102_2q7c4d_job195': 'vocms20.cern.ch//140624//1845463.194', u'ztu_crab_0_140624_225102_2q7c4d_job253': 'vocms20.cern.ch//140624//1845463.252', u'ztu_crab_0_140624_225102_2q7c4d_job252': 'vocms20.cern.ch//140624//1845463.251', u'ztu_crab_0_140624_225102_2q7c4d_job318': 'vocms20.cern.ch//140624//1845463.317', u'ztu_crab_0_140624_225102_2q7c4d_job319': 'vocms20.cern.ch//140624//1845463.318', u'ztu_crab_0_140624_225102_2q7c4d_job257': 'vocms20.cern.ch//140624//1845463.256', u'ztu_crab_0_140624_225102_2q7c4d_job256': 'vocms20.cern.ch//140624//1845463.255', u'ztu_crab_0_140624_225102_2q7c4d_job255': 'vocms20.cern.ch//140624//1845463.254', u'ztu_crab_0_140624_225102_2q7c4d_job254': 'vocms20.cern.ch//140624//1845463.253', u'ztu_crab_0_140624_225102_2q7c4d_job197': 'vocms20.cern.ch//140624//1845463.196', u'ztu_crab_0_140624_225102_2q7c4d_job228': 'vocms20.cern.ch//140624//1845463.227', u'ztu_crab_0_140624_225102_2q7c4d_job229': 'vocms20.cern.ch//140624//1845463.228', u'ztu_crab_0_140624_225102_2q7c4d_job189': 'vocms20.cern.ch//140624//1845463.188', u'ztu_crab_0_140624_225102_2q7c4d_job227': 'vocms20.cern.ch//140624//1845463.226', u'ztu_crab_0_140624_225102_2q7c4d_job224': 'vocms20.cern.ch//140624//1845463.223', u'ztu_crab_0_140624_225102_2q7c4d_job225': 'vocms20.cern.ch//140624//1845463.224', u'ztu_crab_0_140624_225102_2q7c4d_job222': 'vocms20.cern.ch//140624//1845463.221', u'ztu_crab_0_140624_225102_2q7c4d_job223': 'vocms20.cern.ch//140624//1845463.222', u'ztu_crab_0_140624_225102_2q7c4d_job220': 'vocms20.cern.ch//140624//1845463.219', u'ztu_crab_0_140624_225102_2q7c4d_job221': 'vocms20.cern.ch//140624//1845463.220', u'ztu_crab_0_140624_225102_2q7c4d_job389': 'vocms20.cern.ch//140624//1845463.388', u'ztu_crab_0_140624_225102_2q7c4d_job388': 'vocms20.cern.ch//140624//1845463.387', u'ztu_crab_0_140624_225102_2q7c4d_job50': 'vocms20.cern.ch//140624//1845463.49', u'ztu_crab_0_140624_225102_2q7c4d_job381': 'vocms20.cern.ch//140624//1845463.380', u'ztu_crab_0_140624_225102_2q7c4d_job380': 'vocms20.cern.ch//140624//1845463.379', u'ztu_crab_0_140624_225102_2q7c4d_job383': 'vocms20.cern.ch//140624//1845463.382', u'ztu_crab_0_140624_225102_2q7c4d_job51': 'vocms20.cern.ch//140624//1845463.50', u'ztu_crab_0_140624_225102_2q7c4d_job385': 'vocms20.cern.ch//140624//1845463.384', u'ztu_crab_0_140624_225102_2q7c4d_job384': 'vocms20.cern.ch//140624//1845463.383', u'ztu_crab_0_140624_225102_2q7c4d_job387': 'vocms20.cern.ch//140624//1845463.386', u'ztu_crab_0_140624_225102_2q7c4d_job386': 'vocms20.cern.ch//140624//1845463.385', u'ztu_crab_0_140624_225102_2q7c4d_job188': 'vocms20.cern.ch//140624//1845463.187', u'ztu_crab_0_140624_225102_2q7c4d_job366': 'vocms20.cern.ch//140624//1845463.365', u'ztu_crab_0_140624_225102_2q7c4d_job138': 'vocms20.cern.ch//140624//1845463.137', u'ztu_crab_0_140624_225102_2q7c4d_job139': 'vocms20.cern.ch//140624//1845463.138', u'ztu_crab_0_140624_225102_2q7c4d_job132': 'vocms20.cern.ch//140624//1845463.131', u'ztu_crab_0_140624_225102_2q7c4d_job133': 'vocms20.cern.ch//140624//1845463.132', u'ztu_crab_0_140624_225102_2q7c4d_job130': 'vocms20.cern.ch//140624//1845463.129', u'ztu_crab_0_140624_225102_2q7c4d_job131': 'vocms20.cern.ch//140624//1845463.130', u'ztu_crab_0_140624_225102_2q7c4d_job136': 'vocms20.cern.ch//140624//1845463.135', u'ztu_crab_0_140624_225102_2q7c4d_job137': 'vocms20.cern.ch//140624//1845463.136', u'ztu_crab_0_140624_225102_2q7c4d_job134': 'vocms20.cern.ch//140624//1845463.133', u'ztu_crab_0_140624_225102_2q7c4d_job135': 'vocms20.cern.ch//140624//1845463.134'}
+ztu_crab_0_140624_225102_2q7c4d
+lxplus432.cern.ch
+2014-06-24 22:52:23,625 [DEBUG] 	WMS : lxplus432.cern.ch
+Collection ID : ztu_crab_0_140624_225102_2q7c4d
+2014-06-24 22:52:23,767 [DEBUG] 	Submitted job # 1
+2014-06-24 22:52:23,767 [DEBUG] 	Submitted job # 2
+2014-06-24 22:52:23,767 [DEBUG] 	Submitted job # 3
+2014-06-24 22:52:23,767 [DEBUG] 	Submitted job # 4
+2014-06-24 22:52:23,768 [DEBUG] 	Submitted job # 5
+2014-06-24 22:52:23,768 [DEBUG] 	Submitted job # 6
+2014-06-24 22:52:23,768 [DEBUG] 	Submitted job # 7
+2014-06-24 22:52:23,768 [DEBUG] 	Submitted job # 8
+2014-06-24 22:52:23,768 [DEBUG] 	Submitted job # 9
+2014-06-24 22:52:23,768 [DEBUG] 	Submitted job # 10
+2014-06-24 22:52:23,768 [DEBUG] 	Submitted job # 11
+2014-06-24 22:52:23,769 [DEBUG] 	Submitted job # 12
+2014-06-24 22:52:23,769 [DEBUG] 	Submitted job # 13
+2014-06-24 22:52:23,769 [DEBUG] 	Submitted job # 14
+2014-06-24 22:52:23,769 [DEBUG] 	Submitted job # 15
+2014-06-24 22:52:23,769 [DEBUG] 	Submitted job # 16
+2014-06-24 22:52:23,769 [DEBUG] 	Submitted job # 17
+2014-06-24 22:52:23,769 [DEBUG] 	Submitted job # 18
+2014-06-24 22:52:23,770 [DEBUG] 	Submitted job # 19
+2014-06-24 22:52:23,770 [DEBUG] 	Submitted job # 20
+2014-06-24 22:52:23,770 [DEBUG] 	Submitted job # 21
+2014-06-24 22:52:23,770 [DEBUG] 	Submitted job # 22
+2014-06-24 22:52:23,770 [DEBUG] 	Submitted job # 23
+2014-06-24 22:52:23,770 [DEBUG] 	Submitted job # 24
+2014-06-24 22:52:23,770 [DEBUG] 	Submitted job # 25
+2014-06-24 22:52:23,771 [DEBUG] 	Submitted job # 26
+2014-06-24 22:52:23,771 [DEBUG] 	Submitted job # 27
+2014-06-24 22:52:23,771 [DEBUG] 	Submitted job # 28
+2014-06-24 22:52:23,771 [DEBUG] 	Submitted job # 29
+2014-06-24 22:52:23,771 [DEBUG] 	Submitted job # 30
+2014-06-24 22:52:23,771 [DEBUG] 	Submitted job # 31
+2014-06-24 22:52:23,771 [DEBUG] 	Submitted job # 32
+2014-06-24 22:52:23,772 [DEBUG] 	Submitted job # 33
+2014-06-24 22:52:23,772 [DEBUG] 	Submitted job # 34
+2014-06-24 22:52:23,772 [DEBUG] 	Submitted job # 35
+2014-06-24 22:52:23,772 [DEBUG] 	Submitted job # 36
+2014-06-24 22:52:23,772 [DEBUG] 	Submitted job # 37
+2014-06-24 22:52:23,772 [DEBUG] 	Submitted job # 38
+2014-06-24 22:52:23,772 [DEBUG] 	Submitted job # 39
+2014-06-24 22:52:23,773 [DEBUG] 	Submitted job # 40
+2014-06-24 22:52:23,773 [DEBUG] 	Submitted job # 41
+2014-06-24 22:52:23,773 [DEBUG] 	Submitted job # 42
+2014-06-24 22:52:23,773 [DEBUG] 	Submitted job # 43
+2014-06-24 22:52:23,773 [DEBUG] 	Submitted job # 44
+2014-06-24 22:52:23,773 [DEBUG] 	Submitted job # 45
+2014-06-24 22:52:23,773 [DEBUG] 	Submitted job # 46
+2014-06-24 22:52:23,774 [DEBUG] 	Submitted job # 47
+2014-06-24 22:52:23,774 [DEBUG] 	Submitted job # 48
+2014-06-24 22:52:23,774 [DEBUG] 	Submitted job # 49
+2014-06-24 22:52:23,774 [DEBUG] 	Submitted job # 50
+2014-06-24 22:52:23,774 [DEBUG] 	Submitted job # 51
+2014-06-24 22:52:23,774 [DEBUG] 	Submitted job # 52
+2014-06-24 22:52:23,774 [DEBUG] 	Submitted job # 53
+2014-06-24 22:52:23,775 [DEBUG] 	Submitted job # 54
+2014-06-24 22:52:23,775 [DEBUG] 	Submitted job # 55
+2014-06-24 22:52:23,775 [DEBUG] 	Submitted job # 56
+2014-06-24 22:52:23,775 [DEBUG] 	Submitted job # 57
+2014-06-24 22:52:23,775 [DEBUG] 	Submitted job # 58
+2014-06-24 22:52:23,775 [DEBUG] 	Submitted job # 59
+2014-06-24 22:52:23,775 [DEBUG] 	Submitted job # 60
+2014-06-24 22:52:23,776 [DEBUG] 	Submitted job # 61
+2014-06-24 22:52:23,776 [DEBUG] 	Submitted job # 62
+2014-06-24 22:52:23,776 [DEBUG] 	Submitted job # 63
+2014-06-24 22:52:23,776 [DEBUG] 	Submitted job # 64
+2014-06-24 22:52:23,776 [DEBUG] 	Submitted job # 65
+2014-06-24 22:52:23,776 [DEBUG] 	Submitted job # 66
+2014-06-24 22:52:23,776 [DEBUG] 	Submitted job # 67
+2014-06-24 22:52:23,777 [DEBUG] 	Submitted job # 68
+2014-06-24 22:52:23,777 [DEBUG] 	Submitted job # 69
+2014-06-24 22:52:23,777 [DEBUG] 	Submitted job # 70
+2014-06-24 22:52:23,777 [DEBUG] 	Submitted job # 71
+2014-06-24 22:52:23,777 [DEBUG] 	Submitted job # 72
+2014-06-24 22:52:23,777 [DEBUG] 	Submitted job # 73
+2014-06-24 22:52:23,777 [DEBUG] 	Submitted job # 74
+2014-06-24 22:52:23,778 [DEBUG] 	Submitted job # 75
+2014-06-24 22:52:23,778 [DEBUG] 	Submitted job # 76
+2014-06-24 22:52:23,778 [DEBUG] 	Submitted job # 77
+2014-06-24 22:52:23,778 [DEBUG] 	Submitted job # 78
+2014-06-24 22:52:23,778 [DEBUG] 	Submitted job # 79
+2014-06-24 22:52:23,778 [DEBUG] 	Submitted job # 80
+2014-06-24 22:52:23,779 [DEBUG] 	Submitted job # 81
+2014-06-24 22:52:23,779 [DEBUG] 	Submitted job # 82
+2014-06-24 22:52:23,779 [DEBUG] 	Submitted job # 83
+2014-06-24 22:52:23,779 [DEBUG] 	Submitted job # 84
+2014-06-24 22:52:23,779 [DEBUG] 	Submitted job # 85
+2014-06-24 22:52:23,779 [DEBUG] 	Submitted job # 86
+2014-06-24 22:52:23,779 [DEBUG] 	Submitted job # 87
+2014-06-24 22:52:23,780 [DEBUG] 	Submitted job # 88
+2014-06-24 22:52:23,780 [DEBUG] 	Submitted job # 89
+2014-06-24 22:52:23,780 [DEBUG] 	Submitted job # 90
+2014-06-24 22:52:23,780 [DEBUG] 	Submitted job # 91
+2014-06-24 22:52:23,780 [DEBUG] 	Submitted job # 92
+2014-06-24 22:52:23,780 [DEBUG] 	Submitted job # 93
+2014-06-24 22:52:23,780 [DEBUG] 	Submitted job # 94
+2014-06-24 22:52:23,781 [DEBUG] 	Submitted job # 95
+2014-06-24 22:52:23,781 [DEBUG] 	Submitted job # 96
+2014-06-24 22:52:23,781 [DEBUG] 	Submitted job # 97
+2014-06-24 22:52:23,781 [DEBUG] 	Submitted job # 98
+2014-06-24 22:52:23,781 [DEBUG] 	Submitted job # 99
+2014-06-24 22:52:23,781 [DEBUG] 	Submitted job # 100
+2014-06-24 22:52:23,781 [DEBUG] 	Submitted job # 101
+2014-06-24 22:52:23,782 [DEBUG] 	Submitted job # 102
+2014-06-24 22:52:23,782 [DEBUG] 	Submitted job # 103
+2014-06-24 22:52:23,782 [DEBUG] 	Submitted job # 104
+2014-06-24 22:52:23,782 [DEBUG] 	Submitted job # 105
+2014-06-24 22:52:23,782 [DEBUG] 	Submitted job # 106
+2014-06-24 22:52:23,782 [DEBUG] 	Submitted job # 107
+2014-06-24 22:52:23,782 [DEBUG] 	Submitted job # 108
+2014-06-24 22:52:23,783 [DEBUG] 	Submitted job # 109
+2014-06-24 22:52:23,783 [DEBUG] 	Submitted job # 110
+2014-06-24 22:52:23,783 [DEBUG] 	Submitted job # 111
+2014-06-24 22:52:23,783 [DEBUG] 	Submitted job # 112
+2014-06-24 22:52:23,783 [DEBUG] 	Submitted job # 113
+2014-06-24 22:52:23,783 [DEBUG] 	Submitted job # 114
+2014-06-24 22:52:23,783 [DEBUG] 	Submitted job # 115
+2014-06-24 22:52:23,784 [DEBUG] 	Submitted job # 116
+2014-06-24 22:52:23,784 [DEBUG] 	Submitted job # 117
+2014-06-24 22:52:23,784 [DEBUG] 	Submitted job # 118
+2014-06-24 22:52:23,784 [DEBUG] 	Submitted job # 119
+2014-06-24 22:52:23,784 [DEBUG] 	Submitted job # 120
+2014-06-24 22:52:23,784 [DEBUG] 	Submitted job # 121
+2014-06-24 22:52:23,784 [DEBUG] 	Submitted job # 122
+2014-06-24 22:52:23,785 [DEBUG] 	Submitted job # 123
+2014-06-24 22:52:23,785 [DEBUG] 	Submitted job # 124
+2014-06-24 22:52:23,785 [DEBUG] 	Submitted job # 125
+2014-06-24 22:52:23,785 [DEBUG] 	Submitted job # 126
+2014-06-24 22:52:23,785 [DEBUG] 	Submitted job # 127
+2014-06-24 22:52:23,785 [DEBUG] 	Submitted job # 128
+2014-06-24 22:52:23,785 [DEBUG] 	Submitted job # 129
+2014-06-24 22:52:23,786 [DEBUG] 	Submitted job # 130
+2014-06-24 22:52:23,786 [DEBUG] 	Submitted job # 131
+2014-06-24 22:52:23,786 [DEBUG] 	Submitted job # 132
+2014-06-24 22:52:23,786 [DEBUG] 	Submitted job # 133
+2014-06-24 22:52:23,786 [DEBUG] 	Submitted job # 134
+2014-06-24 22:52:23,786 [DEBUG] 	Submitted job # 135
+2014-06-24 22:52:23,786 [DEBUG] 	Submitted job # 136
+2014-06-24 22:52:23,787 [DEBUG] 	Submitted job # 137
+2014-06-24 22:52:23,787 [DEBUG] 	Submitted job # 138
+2014-06-24 22:52:23,787 [DEBUG] 	Submitted job # 139
+2014-06-24 22:52:23,787 [DEBUG] 	Submitted job # 140
+2014-06-24 22:52:23,787 [DEBUG] 	Submitted job # 141
+2014-06-24 22:52:23,787 [DEBUG] 	Submitted job # 142
+2014-06-24 22:52:23,787 [DEBUG] 	Submitted job # 143
+2014-06-24 22:52:23,788 [DEBUG] 	Submitted job # 144
+2014-06-24 22:52:23,788 [DEBUG] 	Submitted job # 145
+2014-06-24 22:52:23,788 [DEBUG] 	Submitted job # 146
+2014-06-24 22:52:23,788 [DEBUG] 	Submitted job # 147
+2014-06-24 22:52:23,788 [DEBUG] 	Submitted job # 148
+2014-06-24 22:52:23,788 [DEBUG] 	Submitted job # 149
+2014-06-24 22:52:23,788 [DEBUG] 	Submitted job # 150
+2014-06-24 22:52:23,789 [DEBUG] 	Submitted job # 151
+2014-06-24 22:52:23,789 [DEBUG] 	Submitted job # 152
+2014-06-24 22:52:23,789 [DEBUG] 	Submitted job # 153
+2014-06-24 22:52:23,789 [DEBUG] 	Submitted job # 154
+2014-06-24 22:52:23,789 [DEBUG] 	Submitted job # 155
+2014-06-24 22:52:23,789 [DEBUG] 	Submitted job # 156
+2014-06-24 22:52:23,789 [DEBUG] 	Submitted job # 157
+2014-06-24 22:52:23,790 [DEBUG] 	Submitted job # 158
+2014-06-24 22:52:23,790 [DEBUG] 	Submitted job # 159
+2014-06-24 22:52:23,790 [DEBUG] 	Submitted job # 160
+2014-06-24 22:52:23,790 [DEBUG] 	Submitted job # 161
+2014-06-24 22:52:23,790 [DEBUG] 	Submitted job # 162
+2014-06-24 22:52:23,790 [DEBUG] 	Submitted job # 163
+2014-06-24 22:52:23,790 [DEBUG] 	Submitted job # 164
+2014-06-24 22:52:23,791 [DEBUG] 	Submitted job # 165
+2014-06-24 22:52:23,791 [DEBUG] 	Submitted job # 166
+2014-06-24 22:52:23,791 [DEBUG] 	Submitted job # 167
+2014-06-24 22:52:23,791 [DEBUG] 	Submitted job # 168
+2014-06-24 22:52:23,791 [DEBUG] 	Submitted job # 169
+2014-06-24 22:52:23,791 [DEBUG] 	Submitted job # 170
+2014-06-24 22:52:23,791 [DEBUG] 	Submitted job # 171
+2014-06-24 22:52:23,792 [DEBUG] 	Submitted job # 172
+2014-06-24 22:52:23,792 [DEBUG] 	Submitted job # 173
+2014-06-24 22:52:23,792 [DEBUG] 	Submitted job # 174
+2014-06-24 22:52:23,792 [DEBUG] 	Submitted job # 175
+2014-06-24 22:52:23,792 [DEBUG] 	Submitted job # 176
+2014-06-24 22:52:23,792 [DEBUG] 	Submitted job # 177
+2014-06-24 22:52:23,792 [DEBUG] 	Submitted job # 178
+2014-06-24 22:52:23,793 [DEBUG] 	Submitted job # 179
+2014-06-24 22:52:23,793 [DEBUG] 	Submitted job # 180
+2014-06-24 22:52:23,793 [DEBUG] 	Submitted job # 181
+2014-06-24 22:52:23,793 [DEBUG] 	Submitted job # 182
+2014-06-24 22:52:23,793 [DEBUG] 	Submitted job # 183
+2014-06-24 22:52:23,793 [DEBUG] 	Submitted job # 184
+2014-06-24 22:52:23,793 [DEBUG] 	Submitted job # 185
+2014-06-24 22:52:23,794 [DEBUG] 	Submitted job # 186
+2014-06-24 22:52:23,794 [DEBUG] 	Submitted job # 187
+2014-06-24 22:52:23,794 [DEBUG] 	Submitted job # 188
+2014-06-24 22:52:23,794 [DEBUG] 	Submitted job # 189
+2014-06-24 22:52:23,794 [DEBUG] 	Submitted job # 190
+2014-06-24 22:52:23,794 [DEBUG] 	Submitted job # 191
+2014-06-24 22:52:23,794 [DEBUG] 	Submitted job # 192
+2014-06-24 22:52:23,795 [DEBUG] 	Submitted job # 193
+2014-06-24 22:52:23,795 [DEBUG] 	Submitted job # 194
+2014-06-24 22:52:23,795 [DEBUG] 	Submitted job # 195
+2014-06-24 22:52:23,795 [DEBUG] 	Submitted job # 196
+2014-06-24 22:52:23,795 [DEBUG] 	Submitted job # 197
+2014-06-24 22:52:23,795 [DEBUG] 	Submitted job # 198
+2014-06-24 22:52:23,795 [DEBUG] 	Submitted job # 199
+2014-06-24 22:52:23,796 [DEBUG] 	Submitted job # 200
+2014-06-24 22:52:23,796 [DEBUG] 	Submitted job # 201
+2014-06-24 22:52:23,796 [DEBUG] 	Submitted job # 202
+2014-06-24 22:52:23,796 [DEBUG] 	Submitted job # 203
+2014-06-24 22:52:23,796 [DEBUG] 	Submitted job # 204
+2014-06-24 22:52:23,796 [DEBUG] 	Submitted job # 205
+2014-06-24 22:52:23,796 [DEBUG] 	Submitted job # 206
+2014-06-24 22:52:23,797 [DEBUG] 	Submitted job # 207
+2014-06-24 22:52:23,797 [DEBUG] 	Submitted job # 208
+2014-06-24 22:52:23,797 [DEBUG] 	Submitted job # 209
+2014-06-24 22:52:23,797 [DEBUG] 	Submitted job # 210
+2014-06-24 22:52:23,797 [DEBUG] 	Submitted job # 211
+2014-06-24 22:52:23,797 [DEBUG] 	Submitted job # 212
+2014-06-24 22:52:23,797 [DEBUG] 	Submitted job # 213
+2014-06-24 22:52:23,798 [DEBUG] 	Submitted job # 214
+2014-06-24 22:52:23,798 [DEBUG] 	Submitted job # 215
+2014-06-24 22:52:23,798 [DEBUG] 	Submitted job # 216
+2014-06-24 22:52:23,798 [DEBUG] 	Submitted job # 217
+2014-06-24 22:52:23,798 [DEBUG] 	Submitted job # 218
+2014-06-24 22:52:23,798 [DEBUG] 	Submitted job # 219
+2014-06-24 22:52:23,798 [DEBUG] 	Submitted job # 220
+2014-06-24 22:52:23,799 [DEBUG] 	Submitted job # 221
+2014-06-24 22:52:23,799 [DEBUG] 	Submitted job # 222
+2014-06-24 22:52:23,799 [DEBUG] 	Submitted job # 223
+2014-06-24 22:52:23,799 [DEBUG] 	Submitted job # 224
+2014-06-24 22:52:23,799 [DEBUG] 	Submitted job # 225
+2014-06-24 22:52:23,799 [DEBUG] 	Submitted job # 226
+2014-06-24 22:52:23,799 [DEBUG] 	Submitted job # 227
+2014-06-24 22:52:23,800 [DEBUG] 	Submitted job # 228
+2014-06-24 22:52:23,800 [DEBUG] 	Submitted job # 229
+2014-06-24 22:52:23,800 [DEBUG] 	Submitted job # 230
+2014-06-24 22:52:23,800 [DEBUG] 	Submitted job # 231
+2014-06-24 22:52:23,800 [DEBUG] 	Submitted job # 232
+2014-06-24 22:52:23,800 [DEBUG] 	Submitted job # 233
+2014-06-24 22:52:23,800 [DEBUG] 	Submitted job # 234
+2014-06-24 22:52:23,801 [DEBUG] 	Submitted job # 235
+2014-06-24 22:52:23,801 [DEBUG] 	Submitted job # 236
+2014-06-24 22:52:23,801 [DEBUG] 	Submitted job # 237
+2014-06-24 22:52:23,801 [DEBUG] 	Submitted job # 238
+2014-06-24 22:52:23,801 [DEBUG] 	Submitted job # 239
+2014-06-24 22:52:23,801 [DEBUG] 	Submitted job # 240
+2014-06-24 22:52:23,801 [DEBUG] 	Submitted job # 241
+2014-06-24 22:52:23,802 [DEBUG] 	Submitted job # 242
+2014-06-24 22:52:23,802 [DEBUG] 	Submitted job # 243
+2014-06-24 22:52:23,802 [DEBUG] 	Submitted job # 244
+2014-06-24 22:52:23,802 [DEBUG] 	Submitted job # 245
+2014-06-24 22:52:23,802 [DEBUG] 	Submitted job # 246
+2014-06-24 22:52:23,802 [DEBUG] 	Submitted job # 247
+2014-06-24 22:52:23,802 [DEBUG] 	Submitted job # 248
+2014-06-24 22:52:23,803 [DEBUG] 	Submitted job # 249
+2014-06-24 22:52:23,803 [DEBUG] 	Submitted job # 250
+2014-06-24 22:52:23,803 [DEBUG] 	Submitted job # 251
+2014-06-24 22:52:23,803 [DEBUG] 	Submitted job # 252
+2014-06-24 22:52:23,803 [DEBUG] 	Submitted job # 253
+2014-06-24 22:52:23,803 [DEBUG] 	Submitted job # 254
+2014-06-24 22:52:23,803 [DEBUG] 	Submitted job # 255
+2014-06-24 22:52:23,804 [DEBUG] 	Submitted job # 256
+2014-06-24 22:52:23,804 [DEBUG] 	Submitted job # 257
+2014-06-24 22:52:23,804 [DEBUG] 	Submitted job # 258
+2014-06-24 22:52:23,804 [DEBUG] 	Submitted job # 259
+2014-06-24 22:52:23,804 [DEBUG] 	Submitted job # 260
+2014-06-24 22:52:23,804 [DEBUG] 	Submitted job # 261
+2014-06-24 22:52:23,804 [DEBUG] 	Submitted job # 262
+2014-06-24 22:52:23,805 [DEBUG] 	Submitted job # 263
+2014-06-24 22:52:23,805 [DEBUG] 	Submitted job # 264
+2014-06-24 22:52:23,805 [DEBUG] 	Submitted job # 265
+2014-06-24 22:52:23,805 [DEBUG] 	Submitted job # 266
+2014-06-24 22:52:23,805 [DEBUG] 	Submitted job # 267
+2014-06-24 22:52:23,805 [DEBUG] 	Submitted job # 268
+2014-06-24 22:52:23,805 [DEBUG] 	Submitted job # 269
+2014-06-24 22:52:23,806 [DEBUG] 	Submitted job # 270
+2014-06-24 22:52:23,806 [DEBUG] 	Submitted job # 271
+2014-06-24 22:52:23,806 [DEBUG] 	Submitted job # 272
+2014-06-24 22:52:23,806 [DEBUG] 	Submitted job # 273
+2014-06-24 22:52:23,806 [DEBUG] 	Submitted job # 274
+2014-06-24 22:52:23,806 [DEBUG] 	Submitted job # 275
+2014-06-24 22:52:23,806 [DEBUG] 	Submitted job # 276
+2014-06-24 22:52:23,807 [DEBUG] 	Submitted job # 277
+2014-06-24 22:52:23,807 [DEBUG] 	Submitted job # 278
+2014-06-24 22:52:23,807 [DEBUG] 	Submitted job # 279
+2014-06-24 22:52:23,807 [DEBUG] 	Submitted job # 280
+2014-06-24 22:52:23,807 [DEBUG] 	Submitted job # 281
+2014-06-24 22:52:23,807 [DEBUG] 	Submitted job # 282
+2014-06-24 22:52:23,807 [DEBUG] 	Submitted job # 283
+2014-06-24 22:52:23,808 [DEBUG] 	Submitted job # 284
+2014-06-24 22:52:23,808 [DEBUG] 	Submitted job # 285
+2014-06-24 22:52:23,808 [DEBUG] 	Submitted job # 286
+2014-06-24 22:52:23,808 [DEBUG] 	Submitted job # 287
+2014-06-24 22:52:23,808 [DEBUG] 	Submitted job # 288
+2014-06-24 22:52:23,808 [DEBUG] 	Submitted job # 289
+2014-06-24 22:52:23,808 [DEBUG] 	Submitted job # 290
+2014-06-24 22:52:23,809 [DEBUG] 	Submitted job # 291
+2014-06-24 22:52:23,809 [DEBUG] 	Submitted job # 292
+2014-06-24 22:52:23,809 [DEBUG] 	Submitted job # 293
+2014-06-24 22:52:23,809 [DEBUG] 	Submitted job # 294
+2014-06-24 22:52:23,809 [DEBUG] 	Submitted job # 295
+2014-06-24 22:52:23,809 [DEBUG] 	Submitted job # 296
+2014-06-24 22:52:23,809 [DEBUG] 	Submitted job # 297
+2014-06-24 22:52:23,810 [DEBUG] 	Submitted job # 298
+2014-06-24 22:52:23,810 [DEBUG] 	Submitted job # 299
+2014-06-24 22:52:23,810 [DEBUG] 	Submitted job # 300
+2014-06-24 22:52:23,810 [DEBUG] 	Submitted job # 301
+2014-06-24 22:52:23,810 [DEBUG] 	Submitted job # 302
+2014-06-24 22:52:23,810 [DEBUG] 	Submitted job # 303
+2014-06-24 22:52:23,810 [DEBUG] 	Submitted job # 304
+2014-06-24 22:52:23,811 [DEBUG] 	Submitted job # 305
+2014-06-24 22:52:23,811 [DEBUG] 	Submitted job # 306
+2014-06-24 22:52:23,811 [DEBUG] 	Submitted job # 307
+2014-06-24 22:52:23,811 [DEBUG] 	Submitted job # 308
+2014-06-24 22:52:23,811 [DEBUG] 	Submitted job # 309
+2014-06-24 22:52:23,811 [DEBUG] 	Submitted job # 310
+2014-06-24 22:52:23,811 [DEBUG] 	Submitted job # 311
+2014-06-24 22:52:23,812 [DEBUG] 	Submitted job # 312
+2014-06-24 22:52:23,812 [DEBUG] 	Submitted job # 313
+2014-06-24 22:52:23,812 [DEBUG] 	Submitted job # 314
+2014-06-24 22:52:23,812 [DEBUG] 	Submitted job # 315
+2014-06-24 22:52:23,812 [DEBUG] 	Submitted job # 316
+2014-06-24 22:52:23,812 [DEBUG] 	Submitted job # 317
+2014-06-24 22:52:23,812 [DEBUG] 	Submitted job # 318
+2014-06-24 22:52:23,813 [DEBUG] 	Submitted job # 319
+2014-06-24 22:52:23,813 [DEBUG] 	Submitted job # 320
+2014-06-24 22:52:23,813 [DEBUG] 	Submitted job # 321
+2014-06-24 22:52:23,813 [DEBUG] 	Submitted job # 322
+2014-06-24 22:52:23,813 [DEBUG] 	Submitted job # 323
+2014-06-24 22:52:23,813 [DEBUG] 	Submitted job # 324
+2014-06-24 22:52:23,813 [DEBUG] 	Submitted job # 325
+2014-06-24 22:52:23,814 [DEBUG] 	Submitted job # 326
+2014-06-24 22:52:23,814 [DEBUG] 	Submitted job # 327
+2014-06-24 22:52:23,814 [DEBUG] 	Submitted job # 328
+2014-06-24 22:52:23,814 [DEBUG] 	Submitted job # 329
+2014-06-24 22:52:23,814 [DEBUG] 	Submitted job # 330
+2014-06-24 22:52:23,814 [DEBUG] 	Submitted job # 331
+2014-06-24 22:52:23,814 [DEBUG] 	Submitted job # 332
+2014-06-24 22:52:23,815 [DEBUG] 	Submitted job # 333
+2014-06-24 22:52:23,815 [DEBUG] 	Submitted job # 334
+2014-06-24 22:52:23,815 [DEBUG] 	Submitted job # 335
+2014-06-24 22:52:23,815 [DEBUG] 	Submitted job # 336
+2014-06-24 22:52:23,815 [DEBUG] 	Submitted job # 337
+2014-06-24 22:52:23,815 [DEBUG] 	Submitted job # 338
+2014-06-24 22:52:23,815 [DEBUG] 	Submitted job # 339
+2014-06-24 22:52:23,816 [DEBUG] 	Submitted job # 340
+2014-06-24 22:52:23,816 [DEBUG] 	Submitted job # 341
+2014-06-24 22:52:23,816 [DEBUG] 	Submitted job # 342
+2014-06-24 22:52:23,816 [DEBUG] 	Submitted job # 343
+2014-06-24 22:52:23,816 [DEBUG] 	Submitted job # 344
+2014-06-24 22:52:23,816 [DEBUG] 	Submitted job # 345
+2014-06-24 22:52:23,816 [DEBUG] 	Submitted job # 346
+2014-06-24 22:52:23,817 [DEBUG] 	Submitted job # 347
+2014-06-24 22:52:23,817 [DEBUG] 	Submitted job # 348
+2014-06-24 22:52:23,817 [DEBUG] 	Submitted job # 349
+2014-06-24 22:52:23,817 [DEBUG] 	Submitted job # 350
+2014-06-24 22:52:23,817 [DEBUG] 	Submitted job # 351
+2014-06-24 22:52:23,817 [DEBUG] 	Submitted job # 352
+2014-06-24 22:52:23,817 [DEBUG] 	Submitted job # 353
+2014-06-24 22:52:23,818 [DEBUG] 	Submitted job # 354
+2014-06-24 22:52:23,818 [DEBUG] 	Submitted job # 355
+2014-06-24 22:52:23,818 [DEBUG] 	Submitted job # 356
+2014-06-24 22:52:23,818 [DEBUG] 	Submitted job # 357
+2014-06-24 22:52:23,818 [DEBUG] 	Submitted job # 358
+2014-06-24 22:52:23,818 [DEBUG] 	Submitted job # 359
+2014-06-24 22:52:23,818 [DEBUG] 	Submitted job # 360
+2014-06-24 22:52:23,819 [DEBUG] 	Submitted job # 361
+2014-06-24 22:52:23,819 [DEBUG] 	Submitted job # 362
+2014-06-24 22:52:23,819 [DEBUG] 	Submitted job # 363
+2014-06-24 22:52:23,819 [DEBUG] 	Submitted job # 364
+2014-06-24 22:52:23,819 [DEBUG] 	Submitted job # 365
+2014-06-24 22:52:23,819 [DEBUG] 	Submitted job # 366
+2014-06-24 22:52:23,819 [DEBUG] 	Submitted job # 367
+2014-06-24 22:52:23,820 [DEBUG] 	Submitted job # 368
+2014-06-24 22:52:23,820 [DEBUG] 	Submitted job # 369
+2014-06-24 22:52:23,820 [DEBUG] 	Submitted job # 370
+2014-06-24 22:52:23,820 [DEBUG] 	Submitted job # 371
+2014-06-24 22:52:23,820 [DEBUG] 	Submitted job # 372
+2014-06-24 22:52:23,820 [DEBUG] 	Submitted job # 373
+2014-06-24 22:52:23,820 [DEBUG] 	Submitted job # 374
+2014-06-24 22:52:23,821 [DEBUG] 	Submitted job # 375
+2014-06-24 22:52:23,821 [DEBUG] 	Submitted job # 376
+2014-06-24 22:52:23,821 [DEBUG] 	Submitted job # 377
+2014-06-24 22:52:23,821 [DEBUG] 	Submitted job # 378
+2014-06-24 22:52:23,821 [DEBUG] 	Submitted job # 379
+2014-06-24 22:52:23,821 [DEBUG] 	Submitted job # 380
+2014-06-24 22:52:23,821 [DEBUG] 	Submitted job # 381
+2014-06-24 22:52:23,822 [DEBUG] 	Submitted job # 382
+2014-06-24 22:52:23,822 [DEBUG] 	Submitted job # 383
+2014-06-24 22:52:23,822 [DEBUG] 	Submitted job # 384
+2014-06-24 22:52:23,822 [DEBUG] 	Submitted job # 385
+2014-06-24 22:52:23,822 [DEBUG] 	Submitted job # 386
+2014-06-24 22:52:23,822 [DEBUG] 	Submitted job # 387
+2014-06-24 22:52:23,822 [DEBUG] 	Submitted job # 388
+2014-06-24 22:52:23,823 [DEBUG] 	Submitted job # 389
+2014-06-24 22:52:23,823 [DEBUG] 	Submitted job # 390
+2014-06-24 22:52:23,823 [DEBUG] 	Submitted job # 391
+2014-06-24 22:52:23,823 [DEBUG] 	Submitted job # 392
+2014-06-24 22:52:23,823 [DEBUG] 	Submitted job # 393
+2014-06-24 22:52:23,823 [DEBUG] 	Submitted job # 394
+2014-06-24 22:52:23,823 [DEBUG] 	Submitted job # 395
+2014-06-24 22:52:23,824 [DEBUG] 	Submitted job # 396
+2014-06-24 22:52:23,824 [DEBUG] 	Submitted job # 397
+2014-06-24 22:52:23,824 [DEBUG] 	Submitted job # 398
+2014-06-24 22:52:23,824 [DEBUG] 	Submitted job # 399
+2014-06-24 22:52:23,824 [DEBUG] 	Submitted job # 400
+2014-06-24 22:52:23,824 [DEBUG] 	Submitted job # 401
+2014-06-24 22:52:24,172 [DEBUG] 	Updating [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401]] state SubSuccess
+2014-06-24 22:52:24,821 [DEBUG] 	GRIDNAME: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=ztu/CN=732466/CN=Zhoudunming Tu 
+2014-06-24 22:52:24,846 [DEBUG] 	Service initialised ({'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'content_type': 'application/json', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'basepath': '/sitedb/data/prod/', 'method': None, 'accept_type': 'application/json', 'timeout': 30, 'requests': {'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'cacheduration': 24, 'host': 'cmsweb.cern.ch', 'accept_type': 'application/json', 'content_type': 'application/json', 'logger': <logging.Logger instance at 0x1ea74518>, 'conn': <httplib.HTTPSConnection instance at 0x20192b00>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 24, 'inputdata': {}}):
+	 host: cmsweb.cern.ch, basepath: /sitedb/data/prod/ (application/json)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_sitedbcache (duration 24 hours, max reuse 24.0 hours)
+2014-06-24 22:52:25,332 [DEBUG] 	Service initialised ({'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'content_type': 'application/json', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'basepath': '/sitedb/data/prod/', 'method': None, 'accept_type': 'application/json', 'timeout': 30, 'requests': {'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'cacheduration': 24, 'host': 'cmsweb.cern.ch', 'accept_type': 'application/json', 'content_type': 'application/json', 'logger': <logging.Logger instance at 0x1ea74518>, 'conn': <httplib.HTTPSConnection instance at 0x20192b00>}, 'logger': <logging.Logger instance at 0x1ea74518>, 'cacheduration': 24, 'inputdata': {}}):
+	 host: cmsweb.cern.ch, basepath: /sitedb/data/prod/ (application/json)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_sitedbcache (duration 24 hours, max reuse 24.0 hours)
+2014-06-24 22:52:25,937 [DEBUG] 	Submission Time: 23.4414269924
+2014-06-24 22:52:25,937 [INFO] 	Total of 401 jobs submitted.
+2014-06-24 22:55:13,416 [DEBUG] 	/afs/cern.ch/cms/ccs/wm/scripts/Crab/CRAB_2_10_5_patch1/python/crab.py -status
+
+2014-06-24 22:55:13,417 [INFO] 	Version 2.10.5_patch1 running on Tue Jun 24 22:55:13 2014 CET (20:55:13 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /afs/cern.ch/user/z/ztu/scratch0/CMSSW_5_3_16/src/RecoHI/HiTracking/test/crab_0_140624_225102/
+
+2014-06-24 22:55:13,417 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/afs/cern.ch/user/z/ztu/.cms_crab/allowed_releases.conf].
+2014-06-24 22:55:13,417 [DEBUG] 	Service initialised ({'endpoint': 'http://cmsdoc.cern.ch/cms/LCG/crab/config/', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_crab', 'basepath': '/cms/LCG/crab/config/', 'method': None, 'timeout': 20, 'requests': {'endpoint': 'http://cmsdoc.cern.ch/cms/LCG/crab/config/', 'timeout': 20, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_crab', 'cacheduration': 0.5, 'host': 'cmsdoc.cern.ch', 'accept_type': 'text/html', 'content_type': 'application/x-www-form-urlencoded', 'logger': <logging.Logger instance at 0x14038e60>, 'type': 'txt/csv', 'conn': <httplib.HTTPConnection instance at 0x1403d200>}, 'logger': <logging.Logger instance at 0x14038e60>, 'cacheduration': 0.5, 'type': 'txt/csv', 'inputdata': {}}):
+	 host: cmsdoc.cern.ch, basepath: /cms/LCG/crab/config/ (text/html)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_crab (duration 0.5 hours, max reuse 24.0 hours)
+2014-06-24 22:55:13,497 [DEBUG] 	Service initialised ({'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'content_type': 'application/json', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'basepath': '/sitedb/data/prod/', 'method': None, 'accept_type': 'application/json', 'timeout': 30, 'requests': {'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'host': 'cmsweb.cern.ch', 'accept_type': 'application/json', 'content_type': 'application/json', 'logger': <logging.Logger instance at 0x14038e60>, 'conn': <httplib.HTTPSConnection instance at 0x14187170>}, 'logger': <logging.Logger instance at 0x14038e60>, 'cacheduration': 0.5, 'inputdata': {}}):
+	 host: cmsweb.cern.ch, basepath: /sitedb/data/prod/ (application/json)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_sitedbcache (duration 0.5 hours, max reuse 24.0 hours)
+2014-06-24 22:55:13,497 [DEBUG] 	Service initialised ({'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'content_type': 'application/json', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'basepath': '/sitedb/data/prod/', 'method': None, 'accept_type': 'application/json', 'timeout': 30, 'requests': {'endpoint': 'https://cmsweb.cern.ch/sitedb/data/prod/', 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_sitedbcache', 'host': 'cmsweb.cern.ch', 'accept_type': 'application/json', 'content_type': 'application/json', 'logger': <logging.Logger instance at 0x14038e60>, 'conn': <httplib.HTTPSConnection instance at 0x141871b8>}, 'logger': <logging.Logger instance at 0x14038e60>, 'cacheduration': 0.5, 'inputdata': {}}):
+	 host: cmsweb.cern.ch, basepath: /sitedb/data/prod/ (application/json)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_sitedbcache (duration 0.5 hours, max reuse 24.0 hours)
+2014-06-24 22:55:13,497 [DEBUG] 	Input whitelist: 
+2014-06-24 22:55:13,497 [DEBUG] 	Input blacklist: 
+2014-06-24 22:55:13,498 [DEBUG] 	Converted whitelist: 
+2014-06-24 22:55:13,498 [DEBUG] 	Converted blacklist: 
+2014-06-24 22:55:13,498 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/afs/cern.ch/user/z/ztu/.cms_crab/myproxy_server.conf].
+2014-06-24 22:55:13,498 [DEBUG] 	Service initialised ({'endpoint': 'http://cmsdoc.cern.ch/cms/LCG/crab/config/', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_crab', 'basepath': '/cms/LCG/crab/config/', 'method': None, 'timeout': 20, 'requests': {'endpoint': 'http://cmsdoc.cern.ch/cms/LCG/crab/config/', 'timeout': 20, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_crab', 'cacheduration': 0.5, 'host': 'cmsdoc.cern.ch', 'accept_type': 'text/html', 'content_type': 'application/x-www-form-urlencoded', 'logger': <logging.Logger instance at 0x14038e60>, 'type': 'txt/csv', 'conn': <httplib.HTTPConnection instance at 0x14187290>}, 'logger': <logging.Logger instance at 0x14038e60>, 'cacheduration': 0.5, 'type': 'txt/csv', 'inputdata': {}}):
+	 host: cmsdoc.cern.ch, basepath: /cms/LCG/crab/config/ (text/html)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_crab (duration 0.5 hours, max reuse 24.0 hours)
+2014-06-24 22:55:13,499 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/afs/cern.ch/user/z/ztu/.cms_crab/site_black_list.conf].
+2014-06-24 22:55:13,499 [DEBUG] 	Service initialised ({'endpoint': 'http://cmsdoc.cern.ch/cms/LCG/crab/config/', 'maxcachereuse': 24.0, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_crab', 'basepath': '/cms/LCG/crab/config/', 'method': None, 'timeout': 20, 'requests': {'endpoint': 'http://cmsdoc.cern.ch/cms/LCG/crab/config/', 'timeout': 20, 'cachepath': '/afs/cern.ch/user/z/ztu/.cms_crab', 'cacheduration': 0.5, 'host': 'cmsdoc.cern.ch', 'accept_type': 'text/html', 'content_type': 'application/x-www-form-urlencoded', 'logger': <logging.Logger instance at 0x14038e60>, 'type': 'txt/csv', 'conn': <httplib.HTTPConnection instance at 0x14187290>}, 'logger': <logging.Logger instance at 0x14038e60>, 'cacheduration': 0.5, 'type': 'txt/csv', 'inputdata': {}}):
+	 host: cmsdoc.cern.ch, basepath: /cms/LCG/crab/config/ (text/html)
+	 cache: /afs/cern.ch/user/z/ztu/.cms_crab (duration 0.5 hours, max reuse 24.0 hours)
+2014-06-24 22:55:13,499 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-06-24 22:55:14,347 [DEBUG] 	Status::run() called
+2014-06-24 22:55:14,347 [INFO] 	Checking the status of all jobs: please wait
+2014-06-24 22:55:14,704 [INFO] 	contacting remote host vocms20.cern.ch
+2014-06-24 22:55:14,748 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/ztu/.ssh/ssh-link-412689133-vocms20.cern.ch -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /tmp/x509up_u30140 vocms20.cern.ch:ztu_crab_0_140624_225102_2q7c4d
+2014-06-24 22:55:14,938 [DEBUG] 	Status,output= 0,
+2014-06-24 22:55:14,939 [DEBUG] 	Execute command :
+gsissh -o ControlMaster=auto -o ControlPath=/tmp/ztu/.ssh/ssh-link-412689133-vocms20.cern.ch -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no vocms20.cern.ch  "condor_history -userlog ztu_crab_0_140624_225102_2q7c4d/condor.log -xml"
+2014-06-24 22:55:15,880 [INFO] 	
+ID    END STATUS            ACTION       ExeExitCode JobExitCode E_HOST
+----- --- ----------------- ------------  ---------- ----------- ---------
+1     N   Running           SubSuccess                           cit-gatekeeper2.ultralight.org
+2     N   Running           SubSuccess                           cit-gatekeeper2.ultralight.org
+3     N   Running           SubSuccess                           red-gw1.unl.edu red-gw1.unl.edu
+4     N   Running           SubSuccess                           red.unl.edu red.unl.edu
+5     N   Running           SubSuccess                           cmsgrid01.hep.wisc.edu
+6     N   Submitted         SubSuccess                           
+7     N   Running           SubSuccess                           cmsgrid02.hep.wisc.edu
+8     N   Submitted         SubSuccess                           
+9     N   Running           SubSuccess                           ce01.cmsaf.mit.edu
+10    N   Running           SubSuccess                           ce01.cmsaf.mit.edu
+--------------------------------------------------------------------------------
+11    N   Running           SubSuccess                           ce02.cmsaf.mit.edu
+12    N   Submitted         SubSuccess                           
+13    N   Submitted         SubSuccess                           
+14    N   Running           SubSuccess                           red-gw2.unl.edu red-gw2.unl.edu
+15    N   Running           SubSuccess                           red-gw1.unl.edu red-gw1.unl.edu
+16    N   Submitted         SubSuccess                           
+17    N   Submitted         SubSuccess                           
+18    N   Submitted         SubSuccess                           
+19    N   Submitted         SubSuccess                           
+20    N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+21    N   Submitted         SubSuccess                           
+22    N   Submitted         SubSuccess                           
+23    N   Submitted         SubSuccess                           
+24    N   Submitted         SubSuccess                           
+25    N   Submitted         SubSuccess                           
+26    N   Submitted         SubSuccess                           
+27    N   Submitted         SubSuccess                           
+28    N   Submitted         SubSuccess                           
+29    N   Submitted         SubSuccess                           
+30    N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+31    N   Submitted         SubSuccess                           
+32    N   Submitted         SubSuccess                           
+33    N   Submitted         SubSuccess                           
+34    N   Submitted         SubSuccess                           
+35    N   Submitted         SubSuccess                           
+36    N   Submitted         SubSuccess                           
+37    N   Submitted         SubSuccess                           
+38    N   Submitted         SubSuccess                           
+39    N   Submitted         SubSuccess                           
+40    N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+41    N   Submitted         SubSuccess                           
+42    N   Submitted         SubSuccess                           
+43    N   Submitted         SubSuccess                           
+44    N   Submitted         SubSuccess                           
+45    N   Submitted         SubSuccess                           
+46    N   Submitted         SubSuccess                           
+47    N   Submitted         SubSuccess                           
+48    N   Submitted         SubSuccess                           
+49    N   Submitted         SubSuccess                           
+50    N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+51    N   Submitted         SubSuccess                           
+52    N   Submitted         SubSuccess                           
+53    N   Submitted         SubSuccess                           
+54    N   Submitted         SubSuccess                           
+55    N   Submitted         SubSuccess                           
+56    N   Submitted         SubSuccess                           
+57    N   Submitted         SubSuccess                           
+58    N   Submitted         SubSuccess                           
+59    N   Submitted         SubSuccess                           
+60    N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+61    N   Submitted         SubSuccess                           
+62    N   Submitted         SubSuccess                           
+63    N   Submitted         SubSuccess                           
+64    N   Submitted         SubSuccess                           
+65    N   Submitted         SubSuccess                           
+66    N   Submitted         SubSuccess                           
+67    N   Submitted         SubSuccess                           
+68    N   Submitted         SubSuccess                           
+69    N   Submitted         SubSuccess                           
+70    N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+71    N   Submitted         SubSuccess                           
+72    N   Submitted         SubSuccess                           
+73    N   Submitted         SubSuccess                           
+74    N   Submitted         SubSuccess                           
+75    N   Submitted         SubSuccess                           
+76    N   Submitted         SubSuccess                           
+77    N   Submitted         SubSuccess                           
+78    N   Submitted         SubSuccess                           
+79    N   Submitted         SubSuccess                           
+80    N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+81    N   Submitted         SubSuccess                           
+82    N   Submitted         SubSuccess                           
+83    N   Submitted         SubSuccess                           
+84    N   Submitted         SubSuccess                           
+85    N   Submitted         SubSuccess                           
+86    N   Submitted         SubSuccess                           
+87    N   Submitted         SubSuccess                           
+88    N   Submitted         SubSuccess                           
+89    N   Submitted         SubSuccess                           
+90    N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+91    N   Submitted         SubSuccess                           
+92    N   Submitted         SubSuccess                           
+93    N   Submitted         SubSuccess                           
+94    N   Submitted         SubSuccess                           
+95    N   Submitted         SubSuccess                           
+96    N   Submitted         SubSuccess                           
+97    N   Submitted         SubSuccess                           
+98    N   Submitted         SubSuccess                           
+99    N   Submitted         SubSuccess                           
+100   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+101   N   Submitted         SubSuccess                           
+102   N   Submitted         SubSuccess                           
+103   N   Submitted         SubSuccess                           
+104   N   Submitted         SubSuccess                           
+105   N   Submitted         SubSuccess                           
+106   N   Submitted         SubSuccess                           
+107   N   Submitted         SubSuccess                           
+108   N   Submitted         SubSuccess                           
+109   N   Submitted         SubSuccess                           
+110   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+111   N   Submitted         SubSuccess                           
+112   N   Submitted         SubSuccess                           
+113   N   Submitted         SubSuccess                           
+114   N   Submitted         SubSuccess                           
+115   N   Submitted         SubSuccess                           
+116   N   Submitted         SubSuccess                           
+117   N   Submitted         SubSuccess                           
+118   N   Submitted         SubSuccess                           
+119   N   Submitted         SubSuccess                           
+120   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+121   N   Submitted         SubSuccess                           
+122   N   Submitted         SubSuccess                           
+123   N   Submitted         SubSuccess                           
+124   N   Submitted         SubSuccess                           
+125   N   Submitted         SubSuccess                           
+126   N   Submitted         SubSuccess                           
+127   N   Submitted         SubSuccess                           
+128   N   Submitted         SubSuccess                           
+129   N   Submitted         SubSuccess                           
+130   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+131   N   Submitted         SubSuccess                           
+132   N   Submitted         SubSuccess                           
+133   N   Submitted         SubSuccess                           
+134   N   Submitted         SubSuccess                           
+135   N   Submitted         SubSuccess                           
+136   N   Submitted         SubSuccess                           
+137   N   Submitted         SubSuccess                           
+138   N   Submitted         SubSuccess                           
+139   N   Submitted         SubSuccess                           
+140   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+141   N   Submitted         SubSuccess                           
+142   N   Submitted         SubSuccess                           
+143   N   Submitted         SubSuccess                           
+144   N   Submitted         SubSuccess                           
+145   N   Submitted         SubSuccess                           
+146   N   Submitted         SubSuccess                           
+147   N   Submitted         SubSuccess                           
+148   N   Submitted         SubSuccess                           
+149   N   Submitted         SubSuccess                           
+150   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+151   N   Submitted         SubSuccess                           
+152   N   Submitted         SubSuccess                           
+153   N   Submitted         SubSuccess                           
+154   N   Submitted         SubSuccess                           
+155   N   Submitted         SubSuccess                           
+156   N   Submitted         SubSuccess                           
+157   N   Submitted         SubSuccess                           
+158   N   Submitted         SubSuccess                           
+159   N   Submitted         SubSuccess                           
+160   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+161   N   Submitted         SubSuccess                           
+162   N   Submitted         SubSuccess                           
+163   N   Submitted         SubSuccess                           
+164   N   Submitted         SubSuccess                           
+165   N   Submitted         SubSuccess                           
+166   N   Submitted         SubSuccess                           
+167   N   Submitted         SubSuccess                           
+168   N   Submitted         SubSuccess                           
+169   N   Submitted         SubSuccess                           
+170   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+171   N   Submitted         SubSuccess                           
+172   N   Submitted         SubSuccess                           
+173   N   Submitted         SubSuccess                           
+174   N   Submitted         SubSuccess                           
+175   N   Submitted         SubSuccess                           
+176   N   Submitted         SubSuccess                           
+177   N   Submitted         SubSuccess                           
+178   N   Submitted         SubSuccess                           
+179   N   Submitted         SubSuccess                           
+180   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+181   N   Submitted         SubSuccess                           
+182   N   Submitted         SubSuccess                           
+183   N   Submitted         SubSuccess                           
+184   N   Submitted         SubSuccess                           
+185   N   Submitted         SubSuccess                           
+186   N   Submitted         SubSuccess                           
+187   N   Submitted         SubSuccess                           
+188   N   Submitted         SubSuccess                           
+189   N   Submitted         SubSuccess                           
+190   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+191   N   Submitted         SubSuccess                           
+192   N   Submitted         SubSuccess                           
+193   N   Submitted         SubSuccess                           
+194   N   Submitted         SubSuccess                           
+195   N   Submitted         SubSuccess                           
+196   N   Submitted         SubSuccess                           
+197   N   Submitted         SubSuccess                           
+198   N   Submitted         SubSuccess                           
+199   N   Submitted         SubSuccess                           
+200   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+201   N   Submitted         SubSuccess                           
+202   N   Submitted         SubSuccess                           
+203   N   Submitted         SubSuccess                           
+204   N   Submitted         SubSuccess                           
+205   N   Submitted         SubSuccess                           
+206   N   Submitted         SubSuccess                           
+207   N   Submitted         SubSuccess                           
+208   N   Submitted         SubSuccess                           
+209   N   Submitted         SubSuccess                           
+210   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+211   N   Submitted         SubSuccess                           
+212   N   Submitted         SubSuccess                           
+213   N   Submitted         SubSuccess                           
+214   N   Submitted         SubSuccess                           
+215   N   Submitted         SubSuccess                           
+216   N   Submitted         SubSuccess                           
+217   N   Submitted         SubSuccess                           
+218   N   Submitted         SubSuccess                           
+219   N   Submitted         SubSuccess                           
+220   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+221   N   Submitted         SubSuccess                           
+222   N   Submitted         SubSuccess                           
+223   N   Submitted         SubSuccess                           
+224   N   Submitted         SubSuccess                           
+225   N   Submitted         SubSuccess                           
+226   N   Submitted         SubSuccess                           
+227   N   Submitted         SubSuccess                           
+228   N   Submitted         SubSuccess                           
+229   N   Submitted         SubSuccess                           
+230   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+231   N   Submitted         SubSuccess                           
+232   N   Submitted         SubSuccess                           
+233   N   Submitted         SubSuccess                           
+234   N   Submitted         SubSuccess                           
+235   N   Submitted         SubSuccess                           
+236   N   Submitted         SubSuccess                           
+237   N   Submitted         SubSuccess                           
+238   N   Submitted         SubSuccess                           
+239   N   Submitted         SubSuccess                           
+240   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+241   N   Submitted         SubSuccess                           
+242   N   Submitted         SubSuccess                           
+243   N   Submitted         SubSuccess                           
+244   N   Submitted         SubSuccess                           
+245   N   Submitted         SubSuccess                           
+246   N   Submitted         SubSuccess                           
+247   N   Submitted         SubSuccess                           
+248   N   Submitted         SubSuccess                           
+249   N   Submitted         SubSuccess                           
+250   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+251   N   Submitted         SubSuccess                           
+252   N   Submitted         SubSuccess                           
+253   N   Submitted         SubSuccess                           
+254   N   Submitted         SubSuccess                           
+255   N   Submitted         SubSuccess                           
+256   N   Submitted         SubSuccess                           
+257   N   Submitted         SubSuccess                           
+258   N   Submitted         SubSuccess                           
+259   N   Submitted         SubSuccess                           
+260   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+261   N   Submitted         SubSuccess                           
+262   N   Submitted         SubSuccess                           
+263   N   Submitted         SubSuccess                           
+264   N   Submitted         SubSuccess                           
+265   N   Submitted         SubSuccess                           
+266   N   Submitted         SubSuccess                           
+267   N   Submitted         SubSuccess                           
+268   N   Submitted         SubSuccess                           
+269   N   Submitted         SubSuccess                           
+270   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+271   N   Submitted         SubSuccess                           
+272   N   Submitted         SubSuccess                           
+273   N   Submitted         SubSuccess                           
+274   N   Submitted         SubSuccess                           
+275   N   Submitted         SubSuccess                           
+276   N   Submitted         SubSuccess                           
+277   N   Submitted         SubSuccess                           
+278   N   Submitted         SubSuccess                           
+279   N   Submitted         SubSuccess                           
+280   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+281   N   Submitted         SubSuccess                           
+282   N   Submitted         SubSuccess                           
+283   N   Submitted         SubSuccess                           
+284   N   Submitted         SubSuccess                           
+285   N   Submitted         SubSuccess                           
+286   N   Submitted         SubSuccess                           
+287   N   Submitted         SubSuccess                           
+288   N   Submitted         SubSuccess                           
+289   N   Submitted         SubSuccess                           
+290   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+291   N   Submitted         SubSuccess                           
+292   N   Submitted         SubSuccess                           
+293   N   Submitted         SubSuccess                           
+294   N   Submitted         SubSuccess                           
+295   N   Submitted         SubSuccess                           
+296   N   Submitted         SubSuccess                           
+297   N   Submitted         SubSuccess                           
+298   N   Submitted         SubSuccess                           
+299   N   Submitted         SubSuccess                           
+300   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+301   N   Submitted         SubSuccess                           
+302   N   Submitted         SubSuccess                           
+303   N   Submitted         SubSuccess                           
+304   N   Submitted         SubSuccess                           
+305   N   Submitted         SubSuccess                           
+306   N   Submitted         SubSuccess                           
+307   N   Submitted         SubSuccess                           
+308   N   Submitted         SubSuccess                           
+309   N   Submitted         SubSuccess                           
+310   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+311   N   Submitted         SubSuccess                           
+312   N   Submitted         SubSuccess                           
+313   N   Submitted         SubSuccess                           
+314   N   Submitted         SubSuccess                           
+315   N   Submitted         SubSuccess                           
+316   N   Submitted         SubSuccess                           
+317   N   Submitted         SubSuccess                           
+318   N   Submitted         SubSuccess                           
+319   N   Submitted         SubSuccess                           
+320   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+321   N   Submitted         SubSuccess                           
+322   N   Submitted         SubSuccess                           
+323   N   Submitted         SubSuccess                           
+324   N   Submitted         SubSuccess                           
+325   N   Submitted         SubSuccess                           
+326   N   Submitted         SubSuccess                           
+327   N   Submitted         SubSuccess                           
+328   N   Submitted         SubSuccess                           
+329   N   Submitted         SubSuccess                           
+330   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+331   N   Submitted         SubSuccess                           
+332   N   Submitted         SubSuccess                           
+333   N   Submitted         SubSuccess                           
+334   N   Submitted         SubSuccess                           
+335   N   Submitted         SubSuccess                           
+336   N   Submitted         SubSuccess                           
+337   N   Submitted         SubSuccess                           
+338   N   Submitted         SubSuccess                           
+339   N   Submitted         SubSuccess                           
+340   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+341   N   Submitted         SubSuccess                           
+342   N   Submitted         SubSuccess                           
+343   N   Submitted         SubSuccess                           
+344   N   Submitted         SubSuccess                           
+345   N   Submitted         SubSuccess                           
+346   N   Submitted         SubSuccess                           
+347   N   Submitted         SubSuccess                           
+348   N   Submitted         SubSuccess                           
+349   N   Submitted         SubSuccess                           
+350   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+351   N   Submitted         SubSuccess                           
+352   N   Submitted         SubSuccess                           
+353   N   Submitted         SubSuccess                           
+354   N   Submitted         SubSuccess                           
+355   N   Submitted         SubSuccess                           
+356   N   Submitted         SubSuccess                           
+357   N   Submitted         SubSuccess                           
+358   N   Submitted         SubSuccess                           
+359   N   Submitted         SubSuccess                           
+360   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+361   N   Submitted         SubSuccess                           
+362   N   Submitted         SubSuccess                           
+363   N   Submitted         SubSuccess                           
+364   N   Submitted         SubSuccess                           
+365   N   Submitted         SubSuccess                           
+366   N   Submitted         SubSuccess                           
+367   N   Submitted         SubSuccess                           
+368   N   Submitted         SubSuccess                           
+369   N   Submitted         SubSuccess                           
+370   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+371   N   Submitted         SubSuccess                           
+372   N   Submitted         SubSuccess                           
+373   N   Submitted         SubSuccess                           
+374   N   Submitted         SubSuccess                           
+375   N   Submitted         SubSuccess                           
+376   N   Submitted         SubSuccess                           
+377   N   Submitted         SubSuccess                           
+378   N   Submitted         SubSuccess                           
+379   N   Submitted         SubSuccess                           
+380   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+381   N   Submitted         SubSuccess                           
+382   N   Submitted         SubSuccess                           
+383   N   Submitted         SubSuccess                           
+384   N   Submitted         SubSuccess                           
+385   N   Submitted         SubSuccess                           
+386   N   Submitted         SubSuccess                           
+387   N   Submitted         SubSuccess                           
+388   N   Submitted         SubSuccess                           
+389   N   Submitted         SubSuccess                           
+390   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+391   N   Submitted         SubSuccess                           
+392   N   Submitted         SubSuccess                           
+393   N   Submitted         SubSuccess                           
+394   N   Submitted         SubSuccess                           
+395   N   Submitted         SubSuccess                           
+396   N   Submitted         SubSuccess                           
+397   N   Submitted         SubSuccess                           
+398   N   Submitted         SubSuccess                           
+399   N   Submitted         SubSuccess                           
+400   N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+401   N   Submitted         SubSuccess                           
+
+2014-06-24 22:55:16,276 [INFO] 	 401 Total Jobs 
+ >>>>>>>>> 390 Jobs Submitted 
+	List of jobs Submitted: 6,8,12-13,16-401 
+ >>>>>>>>> 11 Jobs Running 
+	List of jobs Running: 1-5,7,9-11,14-15 
+
+2014-06-24 22:55:16,400 [INFO] 	You can also follow the status of this task on :
+	CMS Dashboard: http://dashb-cms-job-task.cern.ch/taskmon.html#task=ztu_crab_0_140624_225102_2q7c4d
+	Your task name is: ztu_crab_0_140624_225102_2q7c4d 
+
+2014-06-24 22:55:16,401 [DEBUG] 	Status Time: 2.05372905731
