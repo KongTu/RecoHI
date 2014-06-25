@@ -161,6 +161,7 @@ if doRegit:
     
 
 #pp pT cuts on all steps:
+#HI pT cuts are higher than these
 
     process.hiRegitInitialStepSeeds.RegionFactoryPSet.RegionPSet.ptMin = 0.6
     process.hiRegitLowPtTripletStepSeeds.RegionFactoryPSet.RegionPSet.ptMin = 0.2
