@@ -8,7 +8,7 @@ HiTrackingRegionWithVertexBlock = cms.PSet(
     beamSpot      = cms.InputTag("offlineBeamSpot"),
     precise       = cms.bool(True),		
     useFoundVertices = cms.bool(True),
-    VertexCollection = cms.InputTag("hiSelectedVertex"),		
+    VertexCollection = cms.InputTag("offlinePrimaryVertices"),		
     useFixedError = cms.bool(True),
     fixedError    = cms.double(0.2),
     sigmaZVertex  = cms.double(3.0)		
@@ -23,7 +23,7 @@ HiLowPtTrackingRegionWithVertexBlock = cms.PSet(
     beamSpot      = cms.InputTag("offlineBeamSpot"),
     precise       = cms.bool(True),
     useFoundVertices = cms.bool(True),
-    VertexCollection = cms.InputTag("hiSelectedVertex"),
+    VertexCollection = cms.InputTag("offlinePrimaryVertices"),
     useFixedError = cms.bool(True),
     fixedError    = cms.double(0.2),
     sigmaZVertex  = cms.double(3.0)
@@ -66,7 +66,7 @@ HiTrackingRegionFromClusterVtxBlock = cms.PSet(
 from RecoTauTag.HLTProducers.TauRegionalPixelSeedGenerator_cfi import tauRegionalPixelSeedGenerator
 HiTrackingRegionFactoryFromJetsBlock = tauRegionalPixelSeedGenerator.RegionFactoryPSet
 HiTrackingRegionFactoryFromJetsBlock.RegionPSet.JetSrc = cms.InputTag("iterativeConePu5CaloJets")
-HiTrackingRegionFactoryFromJetsBlock.RegionPSet.vertexSrc = cms.InputTag("hiSelectedVertex")
+HiTrackingRegionFactoryFromJetsBlock.RegionPSet.vertexSrc = cms.InputTag("offlinePrimaryVertices")
 
 # limited stand-alone muon-seeded tracking region
 from RecoMuon.TrackingTools.MuonServiceProxy_cff import MuonServiceProxy
@@ -77,6 +77,6 @@ HiTrackingRegionFactoryFromSTAMuonsBlock = cms.PSet(
     ComponentName = cms.string('HIMuonTrackingRegionProducer'),
     MuonSrc = cms.InputTag("standAloneMuons","UpdatedAtVtx")
     )
-HiTrackingRegionFactoryFromSTAMuonsBlock.MuonTrackingRegionBuilder.vertexCollection = cms.InputTag("hiSelectedVertex")
+HiTrackingRegionFactoryFromSTAMuonsBlock.MuonTrackingRegionBuilder.vertexCollection = cms.InputTag("offlinePrimaryVertices")
 HiTrackingRegionFactoryFromSTAMuonsBlock.MuonTrackingRegionBuilder.UseVertex = cms.bool(True)
 HiTrackingRegionFactoryFromSTAMuonsBlock.MuonTrackingRegionBuilder.Rescale_Dz = cms.double(5.0)
