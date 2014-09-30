@@ -31,14 +31,14 @@ process.options = cms.untracked.PSet(
 
 process.source = cms.Source("PoolSource",
                             duplicateCheckMode = cms.untracked.string("noDuplicateCheck"),
-                            fileNames = cms.untracked.vstring('root://xrootd1.cmsaf.mit.edu//store/himc/HiWinter13/QCD_Pt_80_TuneZ2_5p02TeV/GEN-SIM-RECO/pp_STARTHI53_V25-v1/20000/00B2685E-F075-E211-B6F7-0024E86E8D3F.root')
+                            fileNames = cms.untracked.vstring('root://xrootd3.cmsaf.mit.edu//store/himc/HiWinter13/QCD_Pt_80_TuneZ2_5p02TeV/GEN-SIM-RECO/pp_STARTHI53_V25-v1/20000/00B2685E-F075-E211-B6F7-0024E86E8D3F.root')
 )
 
 process.Timing = cms.Service("Timing")
 
 # Number of events we want to process, -1 = all events
 process.maxEvents = cms.untracked.PSet(
-            input = cms.untracked.int32(100))
+            input = cms.untracked.int32(1000))
 
 
 #####################################################################################
@@ -83,7 +83,7 @@ process.load("RecoEcal.EgammaCoreTools.EcalNextToDeadChannelESProducer_cff")
 #####################################################################################
 
 process.TFileService = cms.Service("TFileService",
-                                  fileName=cms.string('testNOW.root'))
+                                 fileName=cms.string('testNOWhi.root'))
 
 #####################################################################################
 # Additional Reconstruction 
@@ -112,6 +112,7 @@ process.v0analyzerNew = process.ana.clone(
 
   generalV0_ks = cms.InputTag("generalV0CandidatesNew:Kshort"),
   generalV0_la = cms.InputTag("generalV0CandidatesNew:Lambda"),
+  trackSrc = cms.InputTag('generalTracks')
  # jetSrc = cms.InputTag("iterativeCone5CaloJets")
 )
 
@@ -119,7 +120,7 @@ process.v0analyzerHI = process.ana.clone(
 
   generalV0_ks = cms.InputTag("generalV0CandidatesHI:Kshort"),
   generalV0_la = cms.InputTag("generalV0CandidatesHI:Lambda"),
-
+  trackSrc = cms.InputTag('hiGeneralAndRegitTracks')
 )
 # redo reco or just tracking
 
@@ -221,8 +222,8 @@ if doRegit:
     process.hiRegitLowPtTripletStepSeeds.RegionFactoryPSet.RegionPSet.deltaEtaRegion = 0.8
     process.hiRegitPixelPairStepSeeds.RegionFactoryPSet.RegionPSet.deltaPhiRegion = 0.8
     process.hiRegitPixelPairStepSeeds.RegionFactoryPSet.RegionPSet.deltaEtaRegion = 0.8
-    process.hiRegitDetachedTripletStepSeeds.RegionFactoryPSet.RegionPSet.deltaPhiRegion = 0.8
-    process.hiRegitDetachedTripletStepSeeds.RegionFactoryPSet.RegionPSet.deltaEtaRegion = 0.8
+    #process.hiRegitDetachedTripletStepSeeds.RegionFactoryPSet.RegionPSet.deltaPhiRegion = 0.8
+    #process.hiRegitDetachedTripletStepSeeds.RegionFactoryPSet.RegionPSet.deltaEtaRegion = 0.8
     process.hiRegitMixedTripletStepSeedsA.RegionFactoryPSet.RegionPSet.deltaPhiRegion = 0.8
     process.hiRegitMixedTripletStepSeedsA.RegionFactoryPSet.RegionPSet.deltaEtaRegion = 0.8
     process.hiRegitMixedTripletStepSeedsB.RegionFactoryPSet.RegionPSet.deltaPhiRegion = 0.8
