@@ -5,6 +5,8 @@ from RecoHI.HiTracking.hiRegitLowPtTripletStep_cff import *
 from RecoHI.HiTracking.hiRegitPixelPairStep_cff import *
 from RecoHI.HiTracking.hiRegitDetachedTripletStep_cff import *
 from RecoHI.HiTracking.hiRegitMixedTripletStep_cff import *
+from RecoHI.HiTracking.hiRegitPixelLessStep_cff import *
+from RecoHI.HiTracking.hiRegitTobTecStep_cff import *
 
 from RecoHI.HiTracking.MergeRegitTrackCollectionsHI_cff import *
 
@@ -14,6 +16,8 @@ hiRegitTracking = cms.Sequence(
     *hiRegitPixelPairStep
     *hiRegitDetachedTripletStep
     *hiRegitMixedTripletStep
+    *hiRegitPixelLessStep
+    *hiRegitTobTecStep
     *hiRegitTracks
     )
 
